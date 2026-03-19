@@ -9,11 +9,12 @@ description: 欢迎来到我的个人博客，分享编程、学习与思考。
 keywords:
 author: Nicole
 language: zh-CN
-timezone: Asia/Xi'an
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+# url: http://example.com
+url: https://nicoleblog.icu
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,5 +105,5 @@ theme: butterfly
 #   type: ''
 deploy:
   type: git
-  repo: git@github.com:Nicole-star-love1/nicole-hexo-blog.git  # 替换为你的仓库地址
+  repo: https://github.com/Nicole-star-love1/nicole-hexo-blog.git  # 替换为你的仓库地址
   branch: main  # 或者 master，取决于你新建仓库时的默认分支名
