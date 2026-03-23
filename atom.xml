@@ -24,4 +24,21 @@
     <title>Hello World</title>
     <updated>2026-03-18T07:57:02.726Z</updated>
   </entry>
+  <entry>
+    <author>
+      <name>Nicole</name>
+    </author>
+    <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
+    <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
+    <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://gorgeous-swan-f4493a.netlify.app/2025/06/21/javascript/</id>
+    <link href="https://gorgeous-swan-f4493a.netlify.app/2025/06/21/javascript/"/>
+    <published>2025-06-21T08:12:54.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="JS用法"><a href="#JS用法"]]>
+    </summary>
+    <title>JavaScript学习之旅</title>
+    <updated>2026-03-23T16:16:48.634Z</updated>
+  </entry>
 </feed>
