@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Nicole</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://gorgeous-swan-f4493a.netlify.app/</id>
+  <link href="https://gorgeous-swan-f4493a.netlify.app/" rel="alternate"/>
+  <link href="https://gorgeous-swan-f4493a.netlify.app/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Nicole</rights>
+  <subtitle>记录学习与生活</subtitle>
+  <title>Nicole's Blog</title>
+  <updated>2026-03-18T07:57:02.726Z</updated>
+  <entry>
+    <author>
+      <name>Nicole</name>
+    </author>
+    <id>https://gorgeous-swan-f4493a.netlify.app/2026/03/21/hello-world/</id>
+    <link href="https://gorgeous-swan-f4493a.netlify.app/2026/03/21/hello-world/"/>
+    <published>2026-03-21T14:41:20.374Z</published>
+    <summary>
+      <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
+    </summary>
+    <title>Hello World</title>
+    <updated>2026-03-18T07:57:02.726Z</updated>
+  </entry>
+</feed>
