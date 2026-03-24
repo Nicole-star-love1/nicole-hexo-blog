@@ -5,8 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="学习咯,前端学习">
-    <meta name="description" content="CSSCSS简介CSS（Cascading Style Sheets，层叠样式表）是用来控制网页在浏览器中的显示外观的语言。CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。
-CSS分类内联样式表（行内样式表）样式写到标签">
+    <meta name="description" content="现代网页布局CSS布局CSS布局是网页设计的核心技术之一，用于控制元素在页面中的排列方式。
+每种技术都有它们的用途，各有优缺点，相互辅助。
+
+简单布局：优先使用Flexbox（一维）或Grid（二维）。
+复杂响应式布局：使用Grid+媒体查">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@ CSS分类内联样式表（行内样式表）样式写到标签">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CSS教程 | Nicole&#39;s Blog</title>
+    <title>现代网页布局 | Nicole&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -445,12 +448,12 @@ CSS分类内联样式表（行内样式表）样式写到标签">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CSS教程</h1>
+                    <h1 class="description center-align post-title">现代网页布局</h1>
                 </div>
             </div>
         </div>
@@ -507,7 +510,7 @@ CSS分类内联样式表（行内样式表）样式写到标签">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-06-24
+                    2025-07-21
                 </div>
                 
 
@@ -531,453 +534,257 @@ CSS分类内联样式表（行内样式表）样式写到标签">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="CSS简介"><a href="#CSS简介" class="headerlink" title="CSS简介"></a>CSS简介</h2><p>CSS（Cascading Style Sheets，层叠样式表）是用来控制网页在浏览器中的<code>显示外观</code>的语言。CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。</p>
-<h2 id="CSS分类"><a href="#CSS分类" class="headerlink" title="CSS分类"></a>CSS分类</h2><h3 id="内联样式表（行内样式表）"><a href="#内联样式表（行内样式表）" class="headerlink" title="内联样式表（行内样式表）"></a>内联样式表（行内样式表）</h3><p>样式写到标签内部，可以控制当前标签的样式，特殊情况使用。</p>
-<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"color:red; font-size:14px;"</span>&gt;</span>文字内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3><p>写在标签中，脱离结构，可以控制<code>当前页面</code>的所有标签，较为常用。</p>
-<h3 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h3><p>单独新建一个CSS文件，完全脱离结构，可以控制<code>整个网站</code>的所有标签，最常用。</p>
-<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"./css/index.css"</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><p>CSS选择器是CSS规则的第一部分，它是选择<code>HTML元素</code>的方式。</p>
-<p>CSS属性采取<code>键值对</code>的形式。“<code>属性名：属性值；</code>”</p>
-<p>CSS选择器：选择标签；CSS属性：修改样式</p>
-<h3 id="基础选择器"><a href="#基础选择器" class="headerlink" title="基础选择器"></a>基础选择器</h3><h4 id="类型选择器"><a href="#类型选择器" class="headerlink" title="类型选择器"></a>类型选择器</h4><p>类型选择器选择某个<code>类型</code>的元素，也称为<code>标签选择器</code></p>
-<p>CSS层叠性：CSS规则可以同时作用于一个元素，浏览器通过特定规则据欸的那个最终生效的样式。<code>层叠性</code>解决了样式冲突问题。<code>原则</code>：后定义的样式覆盖先前的样式。（就近原则） </p>
-<h4 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h4><p>类选择器选择某<code>1个元素</code>或者<code>多个元素</code>。</p>
-<blockquote>
-<p>注意：</p>
-<p>1.类名自定义，不能是中文、纯数字</p>
-<p>2.多个英文单词组成尽量使用<code>-</code>链接</p>
-<p>3.命名要有意义，尽量见名知义</p>
-<p>4.class属性可以有多类名，中间用<code>空格</code>隔开。例如</p><div class="pink  sub-nav">冬梅</div><p></p>
-</blockquote>
-<h4 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h4><p>选择HTML中具有特定id属性的唯一元素。</p>
-<h4 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h4><p>通配选择器可以选择HTML中<code>所有</code>的标签，进行样式修改。</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* {</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>特殊情况下通过通配符清除所有元素的默认边距和填充，统一不同浏览器的<code>默认样式</code>。</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* {</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>; <span class="comment">/* 去除所有元素的外边距 */</span></span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>; <span class="comment">/* 去除所有元素的内边距 */</span></span><br><span class="line">    <span class="attribute">box-sizing</span>: border-box; <span class="comment">/* 统一盒模型 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-
-<p>水平居中对齐：</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.center</span>{</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">} </span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="关系选择器"><a href="#关系选择器" class="headerlink" title="关系选择器"></a>关系选择器</h3><p>关系选择器是通过<code>位置关系</code>来选择目标元素（标签），可以更精准选择某些元素。</p>
-<h4 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h4><p>选择某个元素的<code>后代</code>元素（<code>不限层级</code>，包括子元素、孙元素等）。</p>
-<h4 id="子代选择器"><a href="#子代选择器" class="headerlink" title="子代选择器"></a>子代选择器</h4><p>选择某个元素的<code>直接子元素</code>（仅限一层）</p>
-<h4 id="兄弟选择器"><a href="#兄弟选择器" class="headerlink" title="兄弟选择器"></a>兄弟选择器</h4><p>分为邻接兄弟选择器、通用兄弟选择器。</p>
-<h3 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h3><p>是将不同的选择器<code>组合</code>到一起，使用<code>逗号</code>分割。也称为<code>并集选择器</code>。</p>
+                <h1 id="现代网页布局"><a href="#现代网页布局" class="headerlink" title="现代网页布局"></a>现代网页布局</h1><h2 id="CSS布局"><a href="#CSS布局" class="headerlink" title="CSS布局"></a>CSS布局</h2><p>CSS布局是网页设计的核心技术之一，用于控制元素在页面中的排列方式。</p>
+<p>每种技术都有它们的用途，各有优缺点，相互辅助。</p>
+<ul>
+<li>简单布局：优先使用Flexbox（一维）或Grid（二维）。</li>
+<li>复杂响应式布局：使用Grid+媒体查询。</li>
+<li>文本内容分栏：多列布局（column-count）。</li>
+<li>兼容旧浏览器：浮动布局或Flexbox的降级方案。</li>
+<li><code>CSS Grid</code>逐渐称为主流，支持更复杂的布局场景。</li>
+</ul>
+<h2 id="CSS正常布局流"><a href="#CSS正常布局流" class="headerlink" title="CSS正常布局流"></a>CSS正常布局流</h2><p>正常布局流（normal flow）是指在不对页面进行任何布局控制时，浏览器默认的HTML布局方式。也称为<code>标准流</code>。正常布局流是CSS布局的基石，页面大的布局就是利用区块元素<code>上下罗列</code>而成。</p>
+<h2 id="display转换"><a href="#display转换" class="headerlink" title="display转换"></a>display转换</h2><p><code>diaplay属性</code>允许我们更改默认的显示方式此属性。</p>
+<p>表单元素默认inline-block，其他元素想要转换可以：<code>display：inline-block；</code></p>
 <blockquote>
 <p>使用场景：</p>
-<p>1.多个元素具备相同样式。</p>
-</blockquote>
-<p>语法：</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>,</span><br><span class="line"><span class="selector-tag">span</span> {</span><br><span class="line">    <span class="attribute">color</span>: pink;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="伪类和伪元素"><a href="#伪类和伪元素" class="headerlink" title="伪类和伪元素"></a>伪类和伪元素</h3><h4 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h4><p>选择元素的<code>特定状态</code>或<code>结构位置</code>，符号是冒号(<code>:</code>)</p>
-<h5 id="状态伪类选择器"><a href="#状态伪类选择器" class="headerlink" title="状态伪类选择器"></a>状态伪类选择器</h5><h6 id="链接伪类"><a href="#链接伪类" class="headerlink" title="链接伪类"></a>链接伪类</h6><p>链接伪类用于根据链接的<code>不同状态</code>（如未访问、悬停、点击等）为其添加样式，从而提升用户体验和界面交互性。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.设置链接不同状态的样式。</p>
-</blockquote>
-<p><code>伪类顺序规则（LVHA顺序）：a:link -&gt; a:visited -&gt; a:hover -&gt; a:active</code></p>
-<h6 id="用户行为伪类"><a href="#用户行为伪类" class="headerlink" title="用户行为伪类"></a>用户行为伪类</h6><p>用户以某种方式和文档<code>交互</code>的时候应用，这些用户行为伪类，有时叫做<code>动态伪类</code>。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.鼠标经过元素的时候，修改样式。</p>
-<p>2.表单获得焦点的时候</p>
-</blockquote>
-<h5 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h5><p>根据<code>元素的位置</code>选择目标元素。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.选择第1个或者最后一个或者第n个元素</p>
-</blockquote>
-<h5 id="表单伪类选择器"><a href="#表单伪类选择器" class="headerlink" title="表单伪类选择器"></a>表单伪类选择器</h5><p>针对表单元素的状态。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.表单按钮禁用的时候，调整颜色。</p>
-<p>2.复选框选中修改样式。</p>
-</blockquote>
-<h4 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h4><p>选择元素的特定部分（使用双冒号<code>::</code>）</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.让表单里面的placeholder文字变颜色。</p>
-<p>2.做很多的修饰效果。</p>
+<p>1.让块级盒子一行显示。</p>
+<p>2.让行内盒子具备宽度高度。</p>
 </blockquote>
 <blockquote>
 <p>注意：</p>
-<p>.nav   类选择器</p>
-<p>:hover   伪类选择器</p>
-<p>::before   伪元素选择器</p>
+<p>1.行内块元素中间会有空白缝隙。给<strong>父元素<code>字号</code>改为0</strong>可以去掉。</p>
+<p>2.实际开发适合于<code>对间距要求不高</code>的情况下可以转换。</p>
+<p>3.如果真的要精细布局，请用flex或者grid更合适。</p>
 </blockquote>
-<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><p>根据元素的<code>属性特征</code>来精准定位元素，从而实现更灵活的样式控制。</p>
+<h2 id="浮动（已被废弃，但需了解）"><a href="#浮动（已被废弃，但需了解）" class="headerlink" title="浮动（已被废弃，但需了解）"></a>浮动（已被废弃，但需了解）</h2><p>浮动（float）可以让元素<code>脱离文档流</code>，向左或向右浮动，直到碰到<code>父容器边缘或其他浮动元素</code>。</p>
+<p>浮动（float）可以让元素<code>脱离文档流，影响周围元素的布局</code>。</p>
+<blockquote>
+<p>浮动带来的影响：</p>
+<p>1.父盒子<code>没有高度</code>。（很多情况下不能给父亲指定高度）</p>
+<p>2.<code>子元素浮动</code>。</p>
+<p>3.影响其他盒子布局了。</p>
+</blockquote>
+<p><code>清除浮动</code>也可以理解为<code>闭合浮动</code>，简单来说，就是让浮动的元素尽量<code>控制在父盒子</code>内，不要影响其他盒子。</p>
+<h2 id="弹性盒子-flex"><a href="#弹性盒子-flex" class="headerlink" title="弹性盒子-flex"></a>弹性盒子-flex</h2><p>Flexbox是CSS弹性盒子布局模块（Flexible Box Layout Module）的缩写，可以快速实现元素的<code>对齐、分布和空间分配</code>。</p>
+<blockquote>
+<p>弹性盒子核心：</p>
+<p><code>1.父控子（亲父子）</code></p>
+<ul>
+<li>父盒子<code>控制</code>子盒子如何排列布局</li>
+<li>父盒子称为<code>容器</code>，子盒子称为<code>项目</code></li>
+</ul>
+<p><code>2.主轴和交叉轴（侧轴）</code></p>
+<ul>
+<li>主轴默认水平方向，交叉轴默认垂直方向，可以更改。</li>
+</ul>
+</blockquote>
+<h3 id="容器（父盒子）属性"><a href="#容器（父盒子）属性" class="headerlink" title="容器（父盒子）属性"></a>容器（父盒子）属性</h3><h4 id="display"><a href="#display" class="headerlink" title="display"></a>display</h4><p>容器（父盒子）设置<code>display：flex；</code>可以让子盒子按照<code>主轴</code>方式排列。</p>
+<ul>
+<li>如果子元素有大小，则按照<code>给定大小</code>来显示。</li>
+<li>如果子元素没有大小，则<code>拉伸</code>充满父容器。</li>
+<li>若子元素总宽度超过容器宽度，默认会<code>压缩</code>子元素。</li>
+</ul>
+<blockquote>
+<p>开发中大部分情况下，父容器设置display：flex；，子元素设定大小。</p>
+</blockquote>
+<h4 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h4><p><code>justify-content</code>定义主轴上的<code>对齐方式</code>。</p>
+<h4 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h4><p><code>align-items</code>定义交叉轴上的对齐方式（单行时整体对齐）</p>
+<h4 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h4><p><code>flex-direction</code>定义主轴方向（改变主轴方向）</p>
+<h4 id="flex-wrap"><a href="#flex-wrap" class="headerlink" title="flex-wrap"></a>flex-wrap</h4><p><code>flex-wrap</code>控制是否换行。</p>
+<h4 id="align-content"><a href="#align-content" class="headerlink" title="align-content"></a>align-content</h4><p><code>align-content</code>定义<strong>多行</strong>时<code>交叉轴</code>上的对齐方式（仅当flex-wrap：wrap且内容换行时生效）。</p>
+<blockquote>
+<p>开发中大部分情况下，该属性使用较少，大部分子元素顺序排列即可。</p>
+</blockquote>
+<h3 id="项目（子盒子）属性"><a href="#项目（子盒子）属性" class="headerlink" title="项目（子盒子）属性"></a>项目（子盒子）属性</h3><p>子元素的属性用于控制自身的<code>尺寸</code>、顺序或对齐方式</p>
+<h4 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h4><p>语法：</p>
+<p><code>flex：1；</code>剩余空间占1份，并且可以伸缩盒子大小。数字表示剩余空间所占份数。是正整数。<code>（flex是将剩余空间平均分为几等份）</code></p>
+<h4 id="gap间距"><a href="#gap间距" class="headerlink" title="gap间距"></a>gap间距</h4><p>gap简写属性用于设置行与列之间的间隙（间距）。</p>
 <blockquote>
 <p>使用场景：</p>
-<p>1.表单样式控制</p>
-<p>2.图标字体控制</p>
-<p>3.国家化语言适配等等</p>
-</blockquote>
-<h2 id="CSS文本样式"><a href="#CSS文本样式" class="headerlink" title="CSS文本样式"></a>CSS文本样式</h2><p>CSS文本样式用于控制网页中文字的外观，包括字体、颜色、对齐、间距等，主要分为两大类：</p>
-<p>字体样式：使用哪种字体，字体大小、字体粗体、斜体等等。</p>
-<p>文本布局：文本对齐、行高、字间距、首行缩进等。</p>
-<blockquote>
-<p>注意：文字是无法直接通过CSS来更改样式的，必须要用适合的<code>标签来包裹它们</code>，本质是<code>修改标签</code>样式，里面文字跟随样式变化。</p>
-</blockquote>
-<h4 id="字体颜色color"><a href="#字体颜色color" class="headerlink" title="字体颜色color"></a>字体颜色color</h4><p>最常见的颜色指定方式，使用关键字、十六进制和rgb()值。学习可以用关键字，开发用十六进制，特殊情况用rgb。</p>
-<ul>
-<li><p>关键字：这些颜色通常不会在生产环境的网站中使用，主要学习使用。比如red、green、blue、pink等。</p>
-<ul>
-<li><p>十六进制：这个是开发最常用的。实际开发中，我们从设计稿直接复制即可。比如：红色#ff0000或者#f00。</p>
-</li>
-<li><p>rgb格式：rgb()函数接受三个参数，分别表示颜色的红、绿和蓝。也是设计稿复制的。比如红色rgb(255,0,0)。</p>
-</li>
-<li><p>另有rgba(255,0,0,0)文字透明。最后一个数值取值0~1，0完全透明，1完全不透明。</p>
-</li>
-</ul>
-<h4 id="字体族font-family"><a href="#字体族font-family" class="headerlink" title="字体族font-family"></a>字体族font-family</h4></li>
-</ul>
-<p>给定一个有先后顺序的，由字体名或者字体族名组成的列表来为选定的元素设置字体。</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> {</span><br><span class="line">    <span class="attribute">font-family</span>: Arial, Helvetica, sans-serif;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>属性值用逗号隔开。浏览器会选择列表中第一个该计算机上有安装的字体。</p>
-<h4 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h4><p>font-size可以设置字体大小。</p>
-<p>单位是：像素px。CSS像素是CSS中用于定义长度、尺寸的单位（简写为px）。</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
-<p>注意：不同浏览器默认字体大小不一样，谷歌默认16px，建议给body标签统一指定大小，做到浏览器统一。</p>
-</blockquote>
-<h4 id="字体风格"><a href="#字体风格" class="headerlink" title="字体风格"></a>字体风格</h4><p>font-style用来打开和关闭文本italic（斜体）。</p>
-<p>属性值：</p>
-<ul>
-<li>normal：将文本设置为普通字体（将存在的斜体关闭）。</li>
-<li>italic：如果当前字体的斜体版本可用，那么文本设置为斜体版本。</li>
-</ul>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">font-style</span>: italic; <span class="comment">/* 设置斜体样式 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>最常见：让em或者i标签<code>取消默认倾斜</code></p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">em</span> {</span><br><span class="line">    <span class="attribute">font-style</span>: normal; <span class="comment">/* 让em取消斜体 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="字体粗体"><a href="#字体粗体" class="headerlink" title="字体粗体"></a>字体粗体</h4><p>font-weight设置文字的粗体大小。</p>
-<p><strong>属性值：</strong></p>
-<ul>
-<li>normal：正常粗细</li>
-<li>bold：加粗</li>
-</ul>
-<p>其他值受属性影响基本不用。</p>
-<p><strong>数字属性值（常用）：</strong></p>
-<ul>
-<li>400：正常粗细</li>
-<li>700：加粗</li>
-</ul>
-<p>取值范围100~900之间，常用就是400和700.</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.很多标题是不要加粗的，此时可以用CSS取消加粗。</p>
-<p>2.部分大批量文字可以利用CSS加粗。</p>
-</blockquote>
-<h4 id="字体装饰text-decoration"><a href="#字体装饰text-decoration" class="headerlink" title="字体装饰text-decoration"></a>字体装饰text-decoration</h4><p>  设置/取消字体上的文本装饰。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.最常见设置链接下划线，比如取消下划线等。</p>
-<p>2.特殊情况添加删除线。</p>
-</blockquote>
-<p>属性值：</p>
-<ul>
-<li>none：取消文本装饰</li>
-<li>underline：下划线</li>
-<li>overline：上划线</li>
-<li>line-through：穿过文本的线</li>
-</ul>
-<h4 id="文本对齐text-align"><a href="#文本对齐text-align" class="headerlink" title="文本对齐text-align"></a>文本对齐text-align</h4><p>控制文本在它所在的块级盒子内<code>如何水平对齐</code>。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.文本/图片在盒子<code>水平对齐</code>。</p>
-<p>2.文章文字<code>两端对齐</code>。</p>
-</blockquote>
-<p>属性值：</p>
-<ul>
-<li>left：文本左对齐</li>
-<li>right：文本右对齐</li>
-<li>center：文本水平居中对齐</li>
-<li>justify：自动改变字间距，两端对齐</li>
-</ul>
-<h4 id="首行缩进text-indent"><a href="#首行缩进text-indent" class="headerlink" title="首行缩进text-indent"></a>首行缩进text-indent</h4><p>设置<code>块级元素</code>中文本行前面空格（<code>缩进</code>）的长度。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.段落首行缩进2个字的效果。</p>
-<p>2.logo隐藏文字效果</p>
-</blockquote>
-<p>属性值：</p>
-<ul>
-<li><p>数字</p>
-<p>常见单位是em，相对单位，<code>本元素的文字大小</code>。1em等于当前元素的字体大小，如果当前元素没有大小，则按照父元素文字大小。</p>
-</li>
-</ul>
-<h4 id="文本字符间距letter-spacing"><a href="#文本字符间距letter-spacing" class="headerlink" title="文本字符间距letter-spacing"></a>文本字符间距letter-spacing</h4><p>用于设置文本字符的间距。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.调整字与字之间距离，用户体验更好。</p>
-</blockquote>
-<p>属性值：</p>
-<ul>
-<li><p>数字。</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">letter-spacing</span>: <span class="number">2px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<h4 id="行高line-height"><a href="#行高line-height" class="headerlink" title="行高line-height"></a>行高line-height</h4><p>设置文本每行之间的高。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.设置多行文本之间的<code>上下间距</code>。</p>
-<p>2.让单行文本<code>垂直居中</code>。</p>
-</blockquote>
-<p>属性值：</p>
-<ul>
-<li><p>数字px</p>
-</li>
-<li><p>数字不带单位（当前<code>字体大小</code>的倍数）</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<h3 id="font简写"><a href="#font简写" class="headerlink" title="font简写"></a>font简写</h3><p>font简写属性在一个声明中设置多个字体属性。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.给整个页面设置相关字体样式</p>
+<p>1.让子元素之间保留间隙</p>
 </blockquote>
 <p>语法：</p>
-<p><code>font:font-style font-weight font-size/line-height font-family;</code></p>
-<ul>
-<li>其中<code>font-size</code>和<code>font-family</code>是必须写</li>
-<li>其他可以省略，默认显示。</li>
-<li>属性有严格的书写顺序。</li>
-</ul>
-<h3 id="CSS继承性"><a href="#CSS继承性" class="headerlink" title="CSS继承性"></a>CSS继承性</h3><p>子元素自动继承父元素的某些CSS样式属性。</p>
-<ul>
-<li>主要继承跟文字相关的样式属性，比如字体、颜色、文本对齐等。</li>
-<li>但是子元素定义自己样式，会<code>优先自己</code>样式。</li>
-</ul>
-<h2 id="Xmind"><a href="#Xmind" class="headerlink" title="Xmind"></a>Xmind</h2><p>快捷键：</p>
-<ul>
-<li>tab：下一级</li>
-<li>enter：同一级</li>
-</ul>
-<h2 id="CSS三大特性"><a href="#CSS三大特性" class="headerlink" title="CSS三大特性"></a>CSS三大特性</h2><p>浏览器通过优先级来判断哪些属性值与一个元素最为相关。优先级是基于不同种类<code>选择器</code>组成的<code>匹配规则</code>。</p>
-<p>原则：</p>
-<p>1.优先级相等的时候，CSS中<code>最后</code>的那个声明的样式将会被应用到元素上。（层叠遵循就近原则）</p>
-<p>2.其余判断哪个选择器<code>权重</code>高，优先执行哪个样式。</p>
-<p>3.权重是4位一组，是分开的层级，不能进位。</p>
+<p>gap：20px；行和列之间保持20像素间隙。</p>
+<p>gap：20px 30px；行间距是20像素，列间距是30像素。</p>
 <blockquote>
-<p>注意：<code>继承的权重是0</code></p>
+<p>注意：gap是写到<strong>父元素（容器）身上</strong>的。</p>
 </blockquote>
-<p>（1）继承性</p>
-<p>子元素继承父元素样式，主要是跟文字相关的样式继承。</p>
-<p>（2）层叠性</p>
-<p>后面样式会覆盖前面样式，主要解决<code>样式冲突</code>问题。但是要看<code>选择器权重</code>来确定优先级。</p>
-<p>（3）优先级</p>
-<p>优先级由<code>选择器</code>的权重决定，权重高的规则<code>覆盖</code>权重低的规则。</p>
-<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>所有的元素都被一个个的“盒子”包围着，学会盒子模型可以实现<code>准确布局</code>、处理<code>元素排列</code>的关键。</p>
-<p>在CSS中，我们有几种类型的盒子，一般分为<code>区块盒子</code>(block boxes)和<code>行内盒子</code>(inline boxes)</p>
-<h3 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h3><p>border属性用于设置盒子边框。</p>
+<h2 id="定位布局-position"><a href="#定位布局-position" class="headerlink" title="定位布局-position"></a>定位布局-position</h2><p>CSS定位布局（position）是控制元素在页面中位置的核心技术之一。通过定位，可以实现元素脱离文档流、层叠、固定在<code>特定位置</code>布局效果（<code>定位和位置有关</code>）</p>
 <blockquote>
 <p>使用场景：</p>
-<p>1.设置盒子四条或者单独边框。</p>
-</blockquote>
-<p>属性值：</p>
-<p>border：边框粗细  边框样式  边框颜色；</p>
-<ul>
-<li>边框由三部分属性值组成，中间必须<code>空格</code>隔开。</li>
-<li>三部分属性值<code>没有先后顺序</code>。</li>
-</ul>
-<p>边框样式的取值有：dotted点状边框；dashed虚线边框；solid实线边框</p>
-<blockquote>
-<p>边框不同线条具有不同风格–使用场景：</p>
-<p>1.四个边框不同。</p>
-<p>2.底部一条线做分割线。</p>
-</blockquote>
-<p>属性：</p>
-<p>根据方位名词。top  bottom  left  right</p>
-<ul>
-<li>border-top：1px  solid  pink;</li>
-<li>border-bottom：1px  solid  pink;</li>
-<li>border-left：1px  solid  pink;</li>
-<li>border-right：1px  solid  pink;</li>
-</ul>
-<h3 id="圆角边框"><a href="#圆角边框" class="headerlink" title="圆角边框"></a>圆角边框</h3><p>border-radius允许你设置元素的外边框圆角。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.盒子设置圆角更好看。</p>
-<p>2.盒子或者图片设置为圆形。</p>
-</blockquote>
-<p>属性：</p>
-<p>border-radius: 属性值;</p>
-<ul>
-<li>数字/百分比</li>
-</ul>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.button</span> {</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
-<p>胶囊按钮：设置圆角为“宽度或者高度”的一半，就可以实现。</p>
-<p>圆形：正方形设置圆角为高度“一半”或者“50%”。</p>
-</blockquote>
-<h3 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h3><p>内边距（padding）位于边框和内容区域之间。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.让盒子内容和边框保留一定距离，更美观。</p>
-</blockquote>
-<p>内边距(padding)多个值用<code>空格</code>隔开。顺时针记忆。</p>
-<h3 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h3><p>外边距（margin）是盒子周围一圈看不到的空间，它会把其他元素推离盒子。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.让元素与元素保留一定距离，更美观。</p>
+<p>1.固定导航栏。页面滚动时导航栏始终<code>固定</code>在视口顶部。</p>
+<p>2.吸顶效果。元素在滚动到某个位置后固定。</p>
+<p>3.弹出菜单/下拉框。鼠标悬停时显示浮动菜单。</p>
+<p>4.悬浮效果。元素悬浮在其他元素上方。</p>
+<p>……</p>
 </blockquote>
 <blockquote>
-<p>注意：</p>
-<p>1.<code>行内元素</code>左右外边距生效，<code>上下外边距无效</code>。</p>
-<p>2.行内元素设置<code>宽度和高度</code>也无效。</p>
+<p><strong>定位分类：</strong>相对定位、绝对定位、固定定位、粘性定位</p>
 </blockquote>
+<h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h3><p>CSS相对定位（position：relative）是布局中常用的定位方式，其核心在于<code>元素相对于自身正常位置进行偏移</code>。</p>
 <blockquote>
-<p>技巧：</p>
-<p><code>区块元素</code>可以利用margin实现<code>水平居中</code>。</p>
-<ul>
-<li>块级盒子必须有<code>宽度</code>。</li>
-<li>只需要设置<code>左右外边距为auto</code>就可以。</li>
-</ul>
-</blockquote>
-<p><code>区块元素</code>上下外边距会出现<code>折叠（合并）</code>情况。</p>
-<ul>
-<li>并列关系（兄弟）的区块元素。</li>
-<li>两个上下外边距将合并为一个外边距，其大小等于<code>最大</code>的单个外边距。</li>
-</ul>
-<blockquote>
-<p>注意：这个是浏览器的特性，我们只设置一个盒子外边距即可。</p>
-</blockquote>
-<p><code>区块元素</code>上下外边距会出现<code>塌陷</code>情况。</p>
-<ul>
-<li>嵌套关系（父子）的区块元素。</li>
-<li>给子盒子设置上下外边距会让父盒子塌陷移动。</li>
-</ul>
-<blockquote>
-<p><strong>解决方案：</strong></p>
-<p>1.给父盒子添加<code>边框</code>。（父盒子本身有边框则不会出现问题）</p>
-<p>2.给父盒子添加上<code>内边距</code></p>
-<p>3.给父盒子添加：<code>overflow: hidden；</code>属性</p>
-</blockquote>
-<h3 id="尺寸计算"><a href="#尺寸计算" class="headerlink" title="尺寸计算"></a>尺寸计算</h3><p>在CSS盒子模型的默认定义里，除了宽度和高度增加盒子大小之外，padding和border都会让<code>盒子变大</code>。这样我们在计算盒子大小的时候都会带来困扰。</p>
-<p><code>box-sizing</code>用于定义元素的盒模型计算方式，控制元素的width和height是否<code>包含padding和border</code>。</p>
-<p>语法：</p>
-<p>box-sizing：属性值；</p>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">box-sizing</span>: border-box;</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
-<p>实际开发中，虽然默认是第一个值，但是我们更提倡使用<code>border-box</code>，可以直接让所有标签修改。</p>
-</blockquote>
-<h3 id="盒子背景"><a href="#盒子背景" class="headerlink" title="盒子背景"></a>盒子背景</h3><p><code>background</code>用于设置元素背景相关属性，包括背景颜色、背景图片、背景位置、背景重复方式等。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.给盒子添加背景图片，更加精美。</p>
-<p>2.给列表添加相同的小图标，装饰效果。</p>
-<p>3.给页面添加大的背景图片，展示更震撼。</p>
-<p>4.纯CSS实现背景渐变效果。</p>
-</blockquote>
-<blockquote>
-<p>背景复合写法：</p>
-<p>background: 颜色  图片  重复  固定  位置/尺寸；</p>
-<p><code>顺序无关</code></p>
-</blockquote>
-<h3 id="背景渐变"><a href="#背景渐变" class="headerlink" title="背景渐变"></a>背景渐变</h3><p>在CSS中，可以通过<code>linear-gradient</code>（线性渐变）和<code>radial-gradient</code>（径向渐变）为元素添加渐变背景。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.文字底色渐变甚至动画，更吸引用户。</p>
-<p>2.盒子添加更美观。</p>
-</blockquote>
-<blockquote>
-<p>使用技巧：</p>
-<p>1.实际开发，UI设计稿可以直接复制即可。</p>
-<p>2.可以利用trae图片自动生成。</p>
-</blockquote>
-<h3 id="盒子阴影"><a href="#盒子阴影" class="headerlink" title="盒子阴影"></a>盒子阴影</h3><p>CSS  box-shadow属性用于在元素的框架上添加阴影效果。</p>
-<blockquote>
-<p>使用场景：</p>
-<p>1.盒子添加阴影，效果更立体。</p>
-<p>2.鼠标经过元素显示阴影，更加突出元素。</p>
+<p>使用场景：和绝对定位搭配使用，主要作用是给绝对定位当<code>爹</code>的。</p>
 </blockquote>
 <p>语法：</p>
-<p><code>box-shadow：x轴偏移量  y轴偏移量  模糊半径  扩散半径  颜色；</code></p>
+<p><code>position：relative；</code>  设定元素为相对定位</p>
 <ul>
-<li>多个属性用<code>空格</code>隔开</li>
-<li><code>x轴偏移量和y轴偏移量</code>是必须要写，其余可以省略采取默认值。</li>
-<li>默认是外阴影，如果改为内阴影要写inset</li>
+<li>相对于自身<code>原来位置</code>移动距离。</li>
+<li><code>不脱离</code>正常流，元素原位置仍被<code>保留</code>，其他元素按原布局排列。</li>
+<li>可以通过<code>top、bottom、left、right</code>属性进行偏移。</li>
+<li>优先级：若同时设置top和bottom，仅<code>top</code>生效；同理left覆盖right。</li>
 </ul>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.nav</span> <span class="selector-tag">li</span> {</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">15px</span> <span class="number">30px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h3><p>过渡效果（transition）用于在元素的属性值发生变化时，平滑地过渡（而不是瞬间切换）。</p>
+<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><p>CSS绝对定位（position：absolute）核心是<code>脱离正常流</code>并基于<code>定位基准</code>进行偏移。</p>
 <blockquote>
-<p>场景：</p>
-<p>1.鼠标经过图片放大。</p>
-<p>2.表单获得焦点，输入框变宽。</p>
+<p>使用场景：</p>
+<p>1.弹出菜单/下拉框。鼠标悬停时显示浮动菜单。</p>
+<p>2.悬浮效果。元素悬浮在其他元素上方。</p>
 </blockquote>
 <p>语法：</p>
-<p><code>transition：过渡属性  过渡时间；</code></p>
+<p><code>position：absolute</code>    设定元素为绝对定位</p>
 <ul>
-<li>属性值中间空格隔开。</li>
-<li>过渡属性如果都要变化可以写<code>all</code></li>
-<li>过渡时间单位是<code>秒s</code>，比如0.2s等</li>
+<li>元素<code>脱离正常流</code>，不占据空间，其他元素按原布局排列。</li>
+<li>相对于最近的<code>已定位祖先元素</code>（position非sttaic）移动位置。若都无定位则相对于<code>视口</code>来定位。</li>
+<li>可以通过top、bottom、left、right属性进行偏移。</li>
+<li>优先级：若同时设置top和bottom，仅<code>top</code>生效；同理left覆盖right。</li>
 </ul>
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:hover</span> {</span><br><span class="line">    <span class="attribute">transition</span>: all <span class="number">0.3s</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="样式初始化"><a href="#样式初始化" class="headerlink" title="样式初始化"></a>样式初始化</h3><p>浏览器对HTML元素有默认样式（如margin、padding、font-size），不同浏览器的默认样式可能不一致，导致跨浏览器兼容性问题。</p>
-<blockquote>
-<p>初始化的核心目的：</p>
-<ul>
-<li>统一浏览器默认样式，消除差异。</li>
-<li>减少后续开发中的冗余代码。</li>
-<li>提高代码的可维护性。</li>
-</ul>
-</blockquote>
-<h2 id="字体图标"><a href="#字体图标" class="headerlink" title="字体图标"></a>字体图标</h2><p>字体图标（Icon Fonts）是一种将图标以<code>字体形式</code>嵌入网页的技术，允许开发者像使用<code>文字</code>一样通过CSS控制<code>图标的样式</code>（如颜色、大小、阴影等）。</p>
+<h3 id="定位-子绝父相"><a href="#定位-子绝父相" class="headerlink" title="定位-子绝父相"></a>定位-子绝父相</h3><h3 id="固定定位"><a href="#固定定位" class="headerlink" title="固定定位"></a>固定定位</h3><p>CSS固定定位（position：fixed）是一种将元素脱离文档流并始终相对于<code>浏览器视口</code>定位的布局技术。</p>
 <blockquote>
 <p>使用场景：</p>
-<p>1.导航菜单图标。</p>
-<p>2.按钮操作图标。</p>
-<p>3.结合动画效果。</p>
+<p>1.固定导航栏。页面滚动时导航栏始终<code>固定</code>在视口顶部。</p>
+<p>2.页面广告。广告覆盖整个页面。</p>
 </blockquote>
-<blockquote>
-<p>优势：</p>
-<p>1.矢量缩放：无损放大缩小</p>
-<p>2.样式灵活：通过CSS直接修改颜色、大小、阴影等属性。</p>
-<p>3.减少HTTP请求：一个字体文件可包含多个图标，比多张图片更高效。</p>
-<p>4.兼容性好：支持所有现代浏览器，甚至部分旧版浏览器。</p>
-</blockquote>
-<p>字体图标要么设计师提供，要么去字体库下载。</p>
-<p>使用字体图标的步骤：</p>
-<p>（1）下载字体图标文件</p>
-<p>去官网或者设计师准备字体图标文件，保存到项目目录下。</p>
-<p>（2）引入html文件中</p>
-<p>根据提供的压缩包，引入CSS文件（link方式）</p>
-<p>（3）使用字体图标</p>
-<p>一般情况下，我们通过标签调用类名选择对应字体图标。根据实际需求，调整字体样式，比如颜色、大小、位置等。</p>
-<h2 id="精灵图"><a href="#精灵图" class="headerlink" title="精灵图"></a>精灵图</h2><p>CSS精灵图（CSS Sprites）是将多个小图标或图像合并到<code>一张大图</code>中，通过调整<code>background-position</code>属性来显示特定部分的图像技术。</p>
+<p>语法：</p>
+<p><code>position：fixed；</code>   设定元素为固定定位</p>
+<ul>
+<li>元素<code>脱离正常流</code>，不占据空间，其他元素按原布局排列。</li>
+<li>始终相对于浏览器窗口（<code>视口</code>）定位，滚动页面时位置不变。</li>
+<li>可以通过top、bottom、left、right属性进行偏移。</li>
+<li>优先级：若同时设置top和bottom，仅<code>top</code>生效；同理left覆盖right。</li>
+</ul>
+<h3 id="粘性定位"><a href="#粘性定位" class="headerlink" title="粘性定位"></a>粘性定位</h3><p>CSS粘性定位（position：sticky）是一种<code>混合定位模式</code>，结合了相对定位和固定定位的特性。</p>
 <blockquote>
 <p>使用场景：</p>
-<p>1.导航菜单图标。</p>
-<p>2.按钮操作图标。</p>
-<p>3.<code>复杂彩色</code>小图标更适合精灵图。</p>
+<p>1.吸顶效果。元素在滚动到某个位置后固定。</p>
+<p>2.表格表头固定。长表格滚动时表头始终可见。</p>
+</blockquote>
+<p>语法：</p>
+<p><code>position：sticky；</code>   设定元素为粘性定位</p>
+<ul>
+<li>元素在滚动到指定位置（如top：10px）前为相对定位，之后转为固定定位。</li>
+<li><code>父容器</code>的overflow需为<code>visible</code>，否则粘性定位失效。</li>
+<li>可以通过top、bottom、left、right属性进行偏移。</li>
+<li>须指定top、right、bottom或left<strong>四个其中之一</strong>，才可使粘性定位生效。</li>
+</ul>
+<h3 id="层叠顺序"><a href="#层叠顺序" class="headerlink" title="层叠顺序"></a>层叠顺序</h3><p><code>z-index</code>属性用于控制元素在三维空间中的<code>层叠顺序</code>（即z轴方向）。当多个元素在同一个平面（如同一行或列）重叠时，z-index决定哪个元素显示在最上层。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.提高层级悬浮效果。</p>
+<p>2.实现图片层叠效果。</p>
+</blockquote>
+<p>语法：</p>
+<p><code>z-index：数值；</code>    设定层级</p>
+<ul>
+<li>值类型：整数（正数、负数、零）或auto。数值越大，层级越高。</li>
+<li>默认值：auto（等同于未设置，后出现的元素覆盖前者）。</li>
+<li>生效条件：仅对定位元素（position值为relative、absolute、fixed或sticky）有效。</li>
+</ul>
+<h2 id="网格布局-grid"><a href="#网格布局-grid" class="headerlink" title="网格布局-grid"></a>网格布局-grid</h2><p>网格布局是一种<code>二维布局</code>模型，允许开发者通过定义行（rows）和列（columns）来精确控制网页元素的位置和尺寸。还可以实现<code>响应式</code>设计。</p>
+<h3 id="网格容器"><a href="#网格容器" class="headerlink" title="网格容器"></a>网格容器</h3><p>容器（父盒子）设置<code>display：grid；（块级）</code>或者<code>display：inline-grid（行内）</code>。</p>
+<p>与弹性盒子不同的是，在定义网格后，网页并不会马上发生变化。因为display：grid的声明只创建了一个只有一列的网格。</p>
+<h3 id="网格轨道"><a href="#网格轨道" class="headerlink" title="网格轨道"></a>网格轨道</h3><p><code>网格轨道</code>（Grid Tracks）决定了网格容器的基础布局结构，为子元素提供放置的位置。</p>
+<p>（1）网格轨道的对齐方式</p>
+<p>（2）绘制网格：（网格轨道）</p>
+<p><code>grid-template-columns / grid-template-rows   属性值</code></p>
+<p>（3）<code>gap</code>简写属性用于设置行与列之间的间隙（网格间距）。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.让元素之间保留间隙。</p>
+</blockquote>
+<p>语法：</p>
+<p><code>gap：20px；</code>行与列之间保持20像素间隙。</p>
+<p><code>gap：20px 30px；</code>行间距是20像素，列间距是30像素。</p>
+<blockquote>
+<p>注意：gap是简写形式，也可以分开写</p>
+<p>column-gap：30px；</p>
+<p>row-gap：20px；</p>
+</blockquote>
+<p>（4）repeat()函数</p>
+<p>语法：<code>repeat（次数，轨道尺寸）</code>或<code>repeat（自动填充，轨道尺寸）</code></p>
+<blockquote>
+<p><code>1.固定次数</code>：</p>
+<p>grid-template-columns：repeat（3，1fr）；</p>
 </blockquote>
 <blockquote>
-<p>优势：</p>
-<p>1.减少HTTP请求：多个小图标合并为一张图片，只需一次请求。</p>
-<p>2.提升性能：减少网络开销，尤其适合移动端或低带宽场景。</p>
-<p>3.统一管理：方便维护图标集，避免文件分散。</p>
+<p><code>2.自动填充</code>：适用于响应式布局中“列数随容器宽度变化”的场景。</p>
+<ul>
+<li>auto-fill：尽可能多地创建列。</li>
+<li>auto-fit：尽可能</li>
+</ul>
 </blockquote>
 <blockquote>
-<p>注意：通过合理使用CSS精灵图，可以有效优化网页性能。对于复杂场景（如高清屏适配），建议结合SVG或字体图标使用。</p>
+<p>区别：当容器空间远远大于所有i子元素大小。</p>
+<p>1.auto-fill：留有空白空间。</p>
+<p>2.auto-fit：会拉伸盒子占满父容器空间。</p>
+</blockquote>
+<p>（5）minmax()函数</p>
+<p>语法：</p>
+<p>minmax（最小值，最大值）    eg：minmax（200px，1fr）；</p>
+<h3 id="网格线"><a href="#网格线" class="headerlink" title="网格线"></a>网格线</h3><p>网格线会在使用网格布局时被创建。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.实现<code>元素跨越</code>多个网格单元。</p>
+</blockquote>
+<p>问题：如何实现<code>元素跨越</code>多个网格单元？</p>
+<p>（1）实现语法1：</p>
+<blockquote>
+<p>1.跨列：grid-column：开始编号/结束线编号；</p>
+<p>2.跨行：grid-row：开始线编号/结束线编号；</p>
 </blockquote>
 <blockquote>
-<p>原理：</p>
-<p>1.给盒子添加<code>背景图片</code>。</p>
-<p>2.通过<code>背景定位（background-position）移动位置</code>对齐。</p>
-<p>3.注意网页的坐标不同，大多数都是负值。</p>
+<p>注意：该属性是要加到<code>项目（子元素）</code>身上的。</p>
 </blockquote>
-
+<p>（2）实现语法2：</p>
+<blockquote>
+<p>1.跨列：grid-column：开始编号/ span  跨单元格数量；</p>
+<p>2.跨行：grid-row：开始线编号/ span  跨单元格数量；</p>
+</blockquote>
+<blockquote>
+<p>注意：该属性是要加到<code>项目（子元素）</code>身上的。</p>
+</blockquote>
+<h3 id="网格填充方式"><a href="#网格填充方式" class="headerlink" title="网格填充方式"></a>网格填充方式</h3><p><code>grid-auto-flow</code>决定网格容器中子元素<code>排列填充</code>方式。</p>
+<p>语法：</p>
+<p>（1）<code>grid-auto-flow：row；</code>（默认）</p>
+<p>子元素按<strong>先行后列</strong>顺序填充，优先填满一行后换行。</p>
+<p>（2）<code>grid-auto-flow：column；</code></p>
+<p>子元素按<strong>先列后行</strong>顺序填充，优先填满一行后换行。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>B站、蔚来布局中有些子元素是按照列方式显示。</p>
+</blockquote>
+<p><code>object-fit</code>是CSS中用于控制替换元素（如<img>、<video>、<iframe>等加载外部资源的元素）内容如何适应其容器尺寸的属性。</p>
+<h3 id="项目对齐方式"><a href="#项目对齐方式" class="headerlink" title="项目对齐方式"></a>项目对齐方式</h3><p>在CSS Grid布局中，控制元素在网格内的对齐方式。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>元素在网格内对齐。</p>
+</blockquote>
+<p>语法：</p>
+<p>（1）justify-items：水平对齐方式；    水平方向（行轴）</p>
+<p>（2）align-items：垂直对齐方式；    垂直方向（列轴）</p>
+<p>（3）place-items：水平+垂直方式；</p>
+<p>“为了提高可读性和兼容性，提倡使用前面两张方式。”</p>
+<blockquote>
+<p>注意：给父容器添加。</p>
+</blockquote>
+<h2 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h2><p>多列布局用于将元素的内容<code>自动分割</code>为指定数量的垂直列。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.长文章分栏。文章自动分列，中间有间隙，也可以做响应式。</p>
+<p>2.图片瀑布流。</p>
+</blockquote>
+<h2 id="鼠标样式"><a href="#鼠标样式" class="headerlink" title="鼠标样式"></a>鼠标样式</h2><p>在CSS中，<code>cursor</code>属性用于控制鼠标指针在元素上的显示样式，通过改变光标形态可以向用户传递交互提示（如“可点击”、“不可选中”等），从而提升界面交互体验。</p>
+<h2 id="CSS书写顺序"><a href="#CSS书写顺序" class="headerlink" title="CSS书写顺序"></a>CSS书写顺序</h2><p>合理的属性顺序应遵循“<code>布局--盒模型--视觉--交互--其他</code>”的逻辑，核心目标是让代码更易读、易维护。实际开发中可根据项目需求微调，但保持团队一致性是关键。</p>
+</iframe></video></p>
                 
             </div>
             <hr/>
@@ -1003,7 +810,7 @@ CSS分类内联样式表（行内样式表）样式写到标签">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://gorgeous-swan-f4493a.netlify.app/2025/06/24/css/">https://gorgeous-swan-f4493a.netlify.app/2025/06/24/css/</a>
+                    <a href="https://gorgeous-swan-f4493a.netlify.app/2025/07/21/xian-dai-wang-ye-bu-ju/">https://gorgeous-swan-f4493a.netlify.app/2025/07/21/xian-dai-wang-ye-bu-ju/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1129,13 +936,13 @@ CSS分类内联样式表（行内样式表）样式写到标签">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2025/07/21/xian-dai-wang-ye-bu-ju/">
+                <a href="/2025/12/21/jiao-hu-dong-xiao-she-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="现代网页布局">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="JavaScript学习之旅">
                         
-                        <span class="card-title">现代网页布局</span>
+                        <span class="card-title">JavaScript学习之旅</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1146,7 +953,7 @@ CSS分类内联样式表（行内样式表）样式写到标签">
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-07-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-12-21
                         </span>
                         <span class="publish-author">
                             
@@ -1186,13 +993,13 @@ CSS分类内联样式表（行内样式表）样式写到标签">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2025/06/21/javascript/">
+                <a href="/2025/06/24/css/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="JavaScript学习之旅">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="CSS教程">
                         
-                        <span class="card-title">JavaScript学习之旅</span>
+                        <span class="card-title">CSS教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1203,7 +1010,7 @@ CSS分类内联样式表（行内样式表）样式写到标签">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-24
                             </span>
                         <span class="publish-author">
                             

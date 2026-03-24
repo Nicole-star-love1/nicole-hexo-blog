@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: 前端学习, Hexo, Blog, Programming, Nicole, Tech">
-    <meta name="description" content="这是我的个人技术博客，分享编程心得和生活点滴。">
+    <meta name="keywords" content="学习咯,前端学习">
+    <meta name="description" content="交互动效设计2D变换CSS transform是元素进行2D/3D变换的核心属性，支持平移、旋转、缩放、倾斜等效果，且不破坏原有文档流布局。
+平移平移translate沿X/Y轴移动元素位置，不改变元素的实际布局（原位置仍保留空白）。
+
+使">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类: 前端学习 | Nicole&#39;s Blog</title>
+    <title>JavaScript学习之旅 | Nicole&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -440,335 +443,576 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">JavaScript学习之旅</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
     <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                记录学习与生活
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-<script>
-    
-      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
-    
-    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
-
-</script>
-
-
-    </div>
-</div>
-
-<main class="content">
-
-    
-
-<div id="category-cloud" class="container chip-container">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
     <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
+                                <span class="chip bg-color">学习咯</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">前端学习</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" class="post-category">
+                                学习咯
+                            </a>
+                        
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                前端学习
+                            </a>
+                        
+                    </div>
+                    
+                </div>
             </div>
-            <div class="tag-chips">
+
+            <div class="post-info">
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2025-12-21
+                </div>
                 
+
                 
-                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" title="学习咯: 4">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">学习咯
-                        <span class="tag-length">4</span>
-                    </span>
-                </a>
+
                 
+
                 
-                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" title="前端学习: 4">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F5EEF8;">前端学习
-                        <span class="tag-length">4</span>
-                    </span>
-                </a>
+
                 
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="交互动效设计"><a href="#交互动效设计" class="headerlink" title="交互动效设计"></a>交互动效设计</h1><h2 id="2D变换"><a href="#2D变换" class="headerlink" title="2D变换"></a>2D变换</h2><p>CSS <code>transform</code>是元素进行2D/3D变换的核心属性，支持平移、旋转、缩放、倾斜等效果，且<code>不破坏</code>原有文档流布局。</p>
+<h3 id="平移"><a href="#平移" class="headerlink" title="平移"></a>平移</h3><p>平移<code>translate</code>沿X/Y轴移动元素位置，不改变元素的实际布局（原位置仍保留空白）。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.悬停元素微调。鼠标放入元素上下或者左右移动（添加过渡更优雅）</p>
+<p>2.元素居中。元素实现水平垂直居中。</p>
+</blockquote>
+<p>语法：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">20px</span>,<span class="number">30px</span>); <span class="comment">/* x y 同时移动*/</span></span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">50%</span>); <span class="comment">/* x 轴移动 */</span></span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translateY</span>(-<span class="number">50%</span>); <span class="comment">/* y 轴移动 */</span></span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>平移不影响页面布局，仅是视觉上的移动。</li>
+<li>添加鼠标经过元素移动，<code>优先transform</code>而不是通过left、top等，性能更佳。</li>
+<li>如果单位是百分比，相对于<code>元素自身尺寸</code>，而非父容器。</li>
+</ul>
+<p><code>结合top:50%;left:50%;与translate(-50%,-50%)实现元素居中</code></p>
+<h3 id="旋转"><a href="#旋转" class="headerlink" title="旋转"></a>旋转</h3><p>旋转（rotate）通过改变元素在平面或空间中的角度实现视觉效果。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.悬停动画（如按钮旋转）</p>
+<p>2.记载动画（无限循环旋转）</p>
+</blockquote>
+<p>语法：</p>
+<p>transform：rotate（360deg）；</p>
+<ul>
+<li>参数单位：deg（度），正值是顺时针，负值是逆时针。</li>
+</ul>
+<p>transform-origin：left  top；</p>
+<ul>
+<li>transform-origin设置<code>旋转中心点</code>。</li>
+<li>属性值支持left、top等，也可以支持数字，比如像素和百分比等。</li>
+</ul>
+<blockquote>
+<p>注意：<code>行内元素</code>的布局特性（无法设置宽高、盒模型限制、transform基准异常）会破坏旋转效果的稳定性和精确性，所以文字类要转换成行内块或者块级元素。比如字体图标需要转换。</p>
+</blockquote>
+<h3 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h3><p>缩放（scale）用于调整元素尺寸，且<code>不改变</code>元素在文档流中的原始占位。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.悬停放大等。</p>
+</blockquote>
+<h3 id="倾斜"><a href="#倾斜" class="headerlink" title="倾斜"></a>倾斜</h3><p>倾斜（skew）用于对元素进行二维<code>倾斜</code>变换，通过沿X轴或Y轴扭曲元素的几何形状。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.鼠标经过元素倾斜效果。</p>
+</blockquote>
+<h3 id="过渡进阶"><a href="#过渡进阶" class="headerlink" title="过渡进阶"></a>过渡进阶</h3><p>transition完整写法：</p>
+<p><code>transition：过渡属性  持续时间  速度曲线  延迟时间；</code></p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transition</span>：<span class="attribute">all</span> linear <span class="number">1s</span>；</span><br></pre></td></tr></tbody></table></figure>
+
+<p>所有属性添加过渡效果，过渡持续1秒，匀速，延迟1秒执行。</p>
+<h3 id="变换函数-复合写法"><a href="#变换函数-复合写法" class="headerlink" title="变换函数-复合写法"></a>变换函数-复合写法</h3><p>在CSS中，transform属性的复合写法（多个变换函数组合使用）</p>
+<p>语法：</p>
+<p><code>transform：A() B() C()；</code></p>
+<h2 id="3D变换"><a href="#3D变换" class="headerlink" title="3D变换"></a>3D变换</h2><p>CSS 3D效果通过将二维元素在三维空间中进行变换，为网页添加<code>立体感</code>和动态交互体验。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.卡片翻转效果。</p>
+<p>2.3D幻灯片/轮播图</p>
+<p>3.数据可视化。立体图标（如3D柱状图）等</p>
+</blockquote>
+<p>“相比JavaScript或WebGL，CSS  3D利用GPU加速，动画更流畅，性能更高效。”</p>
+<h3 id="3D旋转"><a href="#3D旋转" class="headerlink" title="3D旋转"></a>3D旋转</h3><h3 id="透视"><a href="#透视" class="headerlink" title="透视"></a>透视</h3><p>“透视”（perspective）一词源于拉丁文“perspclre”（看透），指在<code>平面上</code>描绘物体的空间关系的方法或技术。</p>
+<p>在CSS中，透视效果（perspective）用于模拟人眼观察3D空间时的近大远小效果。</p>
+<h3 id="3D位移"><a href="#3D位移" class="headerlink" title="3D位移"></a>3D位移</h3><p> CSS 3D平移函数translateZ()和translate3d()</p>
+<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p>CSS3的<code>animation</code>是一种通过定义关键帧和动画属性来实现元素<code>动态</code>效果的技术。</p>
+<blockquote>
+<p>优势：</p>
+<ul>
+<li>性能高效：通过浏览器原生支持，利用GPU加速渲染，避免频繁的JavaScript计算开销。</li>
+<li>代码简洁：解决了传统CSS过渡（transition）只能定义两帧状态的局限性。可以利用关键帧实现更复杂动画。</li>
+<li>交互增强：支持与用户操作（如悬停、点击）结合，提升网页的动态表现力和用户体验。</li>
+</ul>
+</blockquote>
+<p>关键帧：</p>
+<p>关键帧（Keyframe）是动画和视频制作中用于定义动作或状态变化的核心<code>节点</code>，它决定了动画的起始、转折和结束<code>状态</code>。中间帧（插帧）通过算法自动生成，形成连贯的动画效果。</p>
+<p>动画使用：<code>先定义动画，后使用动画</code></p>
+<h3 id="使用动画"><a href="#使用动画" class="headerlink" title="使用动画"></a>使用动画</h3><p><strong>animation：动画名称  动画时长；</strong></p>
+<ul>
+<li>动画属性要写到<code>目标元素</code>里面。</li>
+</ul>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">animation</span>：move <span class="number">1s</span>；</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="animation完整写法"><a href="#animation完整写法" class="headerlink" title="animation完整写法"></a>animation完整写法</h3><blockquote>
+<p>注意：animation-play-state不能写到animation里面，要单独写。</p>
+</blockquote>
+<h3 id="逐帧动画"><a href="#逐帧动画" class="headerlink" title="逐帧动画"></a>逐帧动画</h3><p>steps逐帧动画：</p>
+<p>速度曲线除了常见的linear、ease、cubic-bezier等，还包含steps()函数，steps()是CSS动画中用于控制动画<code>分段执行</code>的计时函数，它通过将动画<code>分割</code>为离散的<code>步骤</code>，实现类似传统帧动画（逐帧动画）的跳跃效果。</p>
+<p>语法：</p>
+<p><code>animation：move 1s steps(8) infinate；</code></p>
+<ul>
+<li>steps(步数)，步数为<code>正整数</code>。</li>
+<li>经常和背景图片（<code>精灵图</code>）来实现动画效果。</li>
+</ul>
+<blockquote>
+<p>逐帧动画的原理：</p>
+<p>1.移动图片。其实是通过变化背景位置，移动距离就是图片宽度。</p>
+<p>2.图片有N个不同图形，steps(步数)就写N</p>
+</blockquote>
+<h2 id="动效案例"><a href="#动效案例" class="headerlink" title="动效案例"></a>动效案例</h2><blockquote>
+<p>新知识：</p>
+<p><code>inset：3px；</code>是针对于<code>定位</code>，写法更简单。</p>
+<p>等价于top:3px；left:3px；right:3px；bottom:3px；</p>
+<p>z-index：-1；可以被标准流盒子压住。</p>
+</blockquote>
+
                 
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Nicole</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://gorgeous-swan-f4493a.netlify.app/2025/12/21/jiao-hu-dong-xiao-she-ji/">https://gorgeous-swan-f4493a.netlify.app/2025/12/21/jiao-hu-dong-xiao-she-ji/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Nicole</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
+                                    <span class="chip bg-color">学习咯</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">前端学习</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
 
     
 
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/12/21/jiao-hu-dong-xiao-she-ji/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="JavaScript学习之旅">
-                            
-                            <span class="card-title">JavaScript学习之旅</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                交互动效设计2D变换CSS transform是元素进行2D/3D变换的核心属性，支持平移、旋转、缩放、倾斜等效果，且不破坏原有文档流布局。
-平移平移translate沿X/Y轴移动元素位置，不改变元素的实际布局（原位置仍保留空白）。
+    
 
-使
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2025/12/21/jiao-hu-dong-xiao-she-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="JavaScript学习之旅">
+                        
+                        <span class="card-title">JavaScript学习之旅</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             
-                        </div>
-                        <div class="publish-info">
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2025-12-21
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" class="post-category">
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" class="post-category">
                                     学习咯
                                 </a>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="post-category">
+                            
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="post-category">
                                     前端学习
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
+                </div>
 
+                
+                <div class="card-action article-tags">
                     
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
-                            <span class="chip bg-color">学习咯</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
-                            <span class="chip bg-color">前端学习</span>
-                        </a>
-                        
-                    </div>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
+                        <span class="chip bg-color">学习咯</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">前端学习</span>
+                    </a>
                     
                 </div>
+                
             </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/07/21/xian-dai-wang-ye-bu-ju/">
-                        <div class="card-image tag-image">
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/07/21/xian-dai-wang-ye-bu-ju/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="现代网页布局">
+                        
+                        <span class="card-title">现代网页布局</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="现代网页布局">
-                            
-                            <span class="card-title">现代网页布局</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                现代网页布局CSS布局CSS布局是网页设计的核心技术之一，用于控制元素在页面中的排列方式。
-每种技术都有它们的用途，各有优缺点，相互辅助。
-
-简单布局：优先使用Flexbox（一维）或Grid（二维）。
-复杂响应式布局：使用Grid+媒体查
-                            
-                        </div>
-                        <div class="publish-info">
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2025-07-21
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" class="post-category">
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" class="post-category">
                                     学习咯
                                 </a>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="post-category">
+                            
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="post-category">
                                     前端学习
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
-                            <span class="chip bg-color">学习咯</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
-                            <span class="chip bg-color">前端学习</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/06/24/css/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="CSS教程">
-                            
-                            <span class="card-title">CSS教程</span>
-                        </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
+                        <span class="chip bg-color">学习咯</span>
                     </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                CSSCSS简介CSS（Cascading Style Sheets，层叠样式表）是用来控制网页在浏览器中的显示外观的语言。CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。
-CSS分类内联样式表（行内样式表）样式写到标签
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" class="post-category">
-                                    学习咯
-                                </a>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    前端学习
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
                     
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
-                            <span class="chip bg-color">学习咯</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
-                            <span class="chip bg-color">前端学习</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/06/21/javascript/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="JavaScript学习之旅">
-                            
-                            <span class="card-title">JavaScript学习之旅</span>
-                        </div>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">前端学习</span>
                     </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                JavaScriptJS用法
-HTML 中的 Javascript 脚本代码必须位于  与  标签之间。
-Javascript 脚本代码可被放置在 HTML 页面的  和  部分中。
-
-JS输出
-如果想从JavaScript访问某个元素，可
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/" class="post-category">
-                                    学习咯
-                                </a>
-                                
-                                <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    前端学习
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%92%AF/">
-                            <span class="chip bg-color">学习咯</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
-                            <span class="chip bg-color">前端学习</span>
-                        </a>
-                        
-                    </div>
                     
                 </div>
+                
             </div>
-            
         </div>
-    </article>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
 </main>
 
 
