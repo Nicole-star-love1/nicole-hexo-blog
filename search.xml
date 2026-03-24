@@ -4,7 +4,36 @@
   
     
     <entry>
-      <title>JavaScript学习之旅</title>
+      <title>前沿技术拓展</title>
+      <link href="/2026/01/21/qian-yan-ji-zhu-tuo-zhan/"/>
+      <url>/2026/01/21/qian-yan-ji-zhu-tuo-zhan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前沿技术拓展"><a href="#前沿技术拓展" class="headerlink" title="前沿技术拓展"></a>前沿技术拓展</h1><h2 id="SVG图片"><a href="#SVG图片" class="headerlink" title="SVG图片"></a>SVG图片</h2><p>SVG（Scalable Vector Graphics）是一种基于XML的<code>矢量图形</code>标准，由W3C制定，支持无损缩放、交互性和动态效果。其核心特点包括：</p><h3 id="SVG组成"><a href="#SVG组成" class="headerlink" title="SVG组成"></a>SVG组成</h3><p>svg组成：</p><ul><li>svg根元素。svg图标必须包裹在<svg>标签内。</svg></li><li><path>路径。通过d属性定义路径指令。M：移动画笔到坐标点，Z：闭合路径。</path></li></ul><h3 id="SVG属性"><a href="#SVG属性" class="headerlink" title="SVG属性"></a>SVG属性</h3><p>SVG图标常见CSS属性：</p><blockquote><p>svg是行内块元素类似，可以设置大小、移动位置、动画等。但是有自己特殊的样式属性。</p></blockquote><h2 id="clip-path"><a href="#clip-path" class="headerlink" title="clip-path"></a>clip-path</h2><p>clip-path创建复杂的裁剪形状，使元素仅显示被裁剪区域内的部分。</p><h2 id="滤镜filter"><a href="#滤镜filter" class="headerlink" title="滤镜filter"></a>滤镜filter</h2><p>CSS滤镜通过filter属性实现，可对<strong>元素及其子元素</strong>进行实时图像处理，无需修改原始素材。</p><h2 id="背景滤镜backdrop-filter"><a href="#背景滤镜backdrop-filter" class="headerlink" title="背景滤镜backdrop-filter"></a>背景滤镜backdrop-filter</h2><p>backdrop-filter是CSS中的一个<code>图形滤镜</code>属性，主要用于对元素背后的区域（即“背景”）应用滤镜效果。它通常与<code>半透明背景</code>配合使用，能实现类似“毛玻璃”的视觉效果。</p><h2 id="动画时间线animation-timeline"><a href="#动画时间线animation-timeline" class="headerlink" title="动画时间线animation-timeline"></a>动画时间线animation-timeline</h2><p>animation-timeline是CSS中用于控制动画时间线的核心属性，它允许开发者将动画进度与特定事件（如滚动、视口可见性）绑定，从而实现更复杂的交互效果。</p><h2 id="变量和函数"><a href="#变量和函数" class="headerlink" title="变量和函数"></a>变量和函数</h2><p>CSS增强了逻辑性和动态计算能力，比如CSS变量和一些动态函数（calc()、clamp()等）</p><blockquote><p>使用场景：</p><ul><li>主题切换</li><li>响应式设计</li><li>交互动画等</li></ul></blockquote><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>CSS变量（也称为自定义属性）是一种动态存储和复用值的机制。它让样式管理更灵活、可维护。变量可以理解为一个容器，里面可以存放数据。</p><h3 id="CSS3计算能力"><a href="#CSS3计算能力" class="headerlink" title="CSS3计算能力"></a>CSS3计算能力</h3><p>calc()函数可以执行数学运算（加减乘除），支持混合单位。</p><h2 id="vw-vh"><a href="#vw-vh" class="headerlink" title="vw/vh"></a>vw/vh</h2><p>vw和vh是CSS中的<code>视口单位</code>（Viewpoint Units），用于基于浏览器视口（Viewport）的尺寸来定义元素的尺寸或位置。</p><p>vw和vh始终基于<code>浏览器可视区域</code>的实时尺寸计算（不包含浏览器工具栏、标签栏等界面元素），它们的值会自动更新。特别适合<code>响应式设计、全屏布局、移动适配</code>等场景。</p><blockquote><p><code>vw</code>（Viewport Width）：标识视口宽度的1%。</p><p>例如，若当前浏览器视口的宽度为1920px，则1vw = 1920px * 1% = 19.2px</p><p><code>vh</code>（Viewport Height）：表示视口高度的1%。</p><p>例如，若当前浏览器视口的宽度为1080px，则1vh = 1080px * 1% = 10.8px</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习咯 </category>
+          
+          <category> 前端学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习咯 </tag>
+            
+            <tag> 前端学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>交互动效设计</title>
       <link href="/2025/12/21/jiao-hu-dong-xiao-she-ji/"/>
       <url>/2025/12/21/jiao-hu-dong-xiao-she-ji/</url>
       
