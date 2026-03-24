@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>响应网页开发</title>
+      <link href="/2026/02/24/xiang-ying-wang-ye-kai-fa/"/>
+      <url>/2026/02/24/xiang-ying-wang-ye-kai-fa/</url>
+      
+        <content type="html"><![CDATA[<h1 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h1><h2 id="响应式布局-1"><a href="#响应式布局-1" class="headerlink" title="响应式布局"></a>响应式布局</h2><p><code>响应式布局</code>是一种网页设计方法，使网页能够根据<code>用户设备</code>的屏幕尺寸、分辨率、方向（横屏/竖屏）等特性<code>自动调整布局和内容</code>，提供一致且优化的用户体验。其核心目标是“一次设计，多端适配”。</p><h2 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h2><p><code>媒体查询</code>是CSS3中的一个强大功能，它允许开发者<code>根据设备的特定特性</code>（如屏幕宽度、高度、方向、分辨率等）来应用<code>不同的CSS样式</code>。媒体查询是实现响应式网页设计（Response Web Design）的核心技术。</p><h2 id="Bootstrap框架"><a href="#Bootstrap框架" class="headerlink" title="Bootstrap框架"></a>Bootstrap框架</h2><p><code>Bootstrap</code>是由Twitter团队开发的开源<code>前端框架</code>，用于快速构建响应式、移动优先的网站和Web应用程序。它提供了一套完整的HTML、CSS和JavaScript组件，使开发者可以轻松实现现代化的UI设计。</p><ul><li>提供大量预定义样式和组件，减少重复代码。</li><li>开发者可以专注于业务逻辑，而不必从零开始写CSS。</li></ul><blockquote><p>官网：<a href="https://getbootstrap.com/">https://getbootstrap.com/</a></p></blockquote><blockquote><p>Bootstrap使用：</p><p>1.下载并引入相关文件。</p><p>2.学习官方文档指引，学习框架相关语法。</p></blockquote><h3 id="内容（content）"><a href="#内容（content）" class="headerlink" title="内容（content）"></a>内容（content）</h3><p>内容包含：字体排版比如标题、段落以及图片、表格、表单等。</p><h3 id="实用工具"><a href="#实用工具" class="headerlink" title="实用工具"></a>实用工具</h3><p>实用工具包含：CSS常见样式比如背景、边框、颜色等。</p><h3 id="组件（components）"><a href="#组件（components）" class="headerlink" title="组件（components）"></a>组件（components）</h3><p><code>Bootstrap组件</code>是预定义的网页元素，具有各种不同的功能，从呈现内容到用户交互都有涵盖。</p><p>常见的Bootstrap组件比如徽章、按钮、卡片、轮播图、导航栏、选项卡等。</p><p><img src="/assets/1773048827688.png" alt="77304882768"></p><h3 id="布局（layout）"><a href="#布局（layout）" class="headerlink" title="布局（layout）"></a>布局（layout）</h3><p><code>Bootstrap布局</code>是我们学习的重点，重点学习里面的网格系统（<code>栅格系统</code>），需要学习断点、容器、栅格系统、列等相关内容。</p><h4 id="断点"><a href="#断点" class="headerlink" title="断点"></a>断点</h4><p><img src="/assets/1773049024404.png" alt="77304902440"></p><h4 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h4><p><img src="/assets/1773049292456.png" alt="77304929245"></p><h4 id="网格系统（Layout）"><a href="#网格系统（Layout）" class="headerlink" title="网格系统（Layout）"></a>网格系统（Layout）</h4><p><img src="/assets/1773049476791.png" alt="77304947679"></p><h4 id="列对齐"><a href="#列对齐" class="headerlink" title="列对齐"></a>列对齐</h4><p><img src="/assets/1773050755655.png" alt="77305075565"></p><h3 id="字体图标"><a href="#字体图标" class="headerlink" title="字体图标"></a>字体图标</h3><p><img src="/assets/1773051250911.png" alt="77305125091"></p><h2 id="新知识补充"><a href="#新知识补充" class="headerlink" title="新知识补充"></a>新知识补充</h2><h3 id="TDK网站优化标签"><a href="#TDK网站优化标签" class="headerlink" title="TDK网站优化标签"></a>TDK网站优化标签</h3><p>TDK是<code>Title、Description和Keywords</code>三个元标签的缩写，它们是网站SEO优化的核心元素。直接影响搜索引擎对网页的理解和排名。</p><h3 id="图片遮罩mask-image"><a href="#图片遮罩mask-image" class="headerlink" title="图片遮罩mask-image"></a>图片遮罩mask-image</h3><p><code>mask-image</code>的核心作用是通过定义一张图片或一个渐变来充当遮罩，从而控制一个元素的可视区域。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习咯 </category>
+          
+          <category> 前端学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习咯 </tag>
+            
+            <tag> 前端学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>移动网页开发</title>
       <link href="/2026/02/02/yi-dong-wang-ye-kai-fa/"/>
       <url>/2026/02/02/yi-dong-wang-ye-kai-fa/</url>
