@@ -5,12 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="学习咯,前端学习">
-    <meta name="description" content="JavaScriptJS用法
-HTML 中的 Javascript 脚本代码必须位于  与  标签之间。
-Javascript 脚本代码可被放置在 HTML 页面的  和  部分中。
-
-JS输出
-如果想从JavaScript访问某个元素，可">
+    <meta name="description" content="CSSCSS简介CSS（Cascading Style Sheets，层叠样式表）是用来控制网页在浏览器中的显示外观的语言。CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。
+CSS分类内联样式表（行内样式表）样式写到标签">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +18,7 @@ JS输出
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaScript学习之旅 | Nicole&#39;s Blog</title>
+    <title>CSS教程 | Nicole&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -449,12 +445,12 @@ JS输出
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaScript学习之旅</h1>
+                    <h1 class="description center-align post-title">CSS教程</h1>
                 </div>
             </div>
         </div>
@@ -511,7 +507,7 @@ JS输出
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-06-21
+                    2025-06-24
                 </div>
                 
 
@@ -535,37 +531,452 @@ JS输出
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1><h2 id="JS用法"><a href="#JS用法" class="headerlink" title="JS用法"></a>JS用法</h2><ul>
-<li>HTML 中的 Javascript 脚本代码必须位于 <script> 与 </script> 标签之间。</li>
-<li>Javascript 脚本代码可被放置在 HTML 页面的  和  部分中。</li>
-</ul>
-<h2 id="JS输出"><a href="#JS输出" class="headerlink" title="JS输出"></a>JS输出</h2><ul>
-<li>如果想从JavaScript访问某个元素，可以使用document.getElementById(id)方法。并且要使用id属性来标识html元素，使用innerHTML来获取或插入元素内容。</li>
-</ul>
-<h2 id="JS变量"><a href="#JS变量" class="headerlink" title="JS变量"></a>JS变量</h2><p>var声明变量的特点：</p>
+                <h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="CSS简介"><a href="#CSS简介" class="headerlink" title="CSS简介"></a>CSS简介</h2><p>CSS（Cascading Style Sheets，层叠样式表）是用来控制网页在浏览器中的<code>显示外观</code>的语言。CSS3现在已被大部分现代浏览器支持，而下一版的CSS4仍在开发中。</p>
+<h2 id="CSS分类"><a href="#CSS分类" class="headerlink" title="CSS分类"></a>CSS分类</h2><h3 id="内联样式表（行内样式表）"><a href="#内联样式表（行内样式表）" class="headerlink" title="内联样式表（行内样式表）"></a>内联样式表（行内样式表）</h3><p>样式写到标签内部，可以控制当前标签的样式，特殊情况使用。</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"color:red; font-size:14px;"</span>&gt;</span>文字内容<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3><p>写在标签中，脱离结构，可以控制<code>当前页面</code>的所有标签，较为常用。</p>
+<h3 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h3><p>单独新建一个CSS文件，完全脱离结构，可以控制<code>整个网站</code>的所有标签，最常用。</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"./css/index.css"</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><p>CSS选择器是CSS规则的第一部分，它是选择<code>HTML元素</code>的方式。</p>
+<p>CSS属性采取<code>键值对</code>的形式。“<code>属性名：属性值；</code>”</p>
+<p>CSS选择器：选择标签；CSS属性：修改样式</p>
+<h3 id="基础选择器"><a href="#基础选择器" class="headerlink" title="基础选择器"></a>基础选择器</h3><h4 id="类型选择器"><a href="#类型选择器" class="headerlink" title="类型选择器"></a>类型选择器</h4><p>类型选择器选择某个<code>类型</code>的元素，也称为<code>标签选择器</code></p>
+<p>CSS层叠性：CSS规则可以同时作用于一个元素，浏览器通过特定规则据欸的那个最终生效的样式。<code>层叠性</code>解决了样式冲突问题。<code>原则</code>：后定义的样式覆盖先前的样式。（就近原则） </p>
+<h4 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h4><p>类选择器选择某<code>1个元素</code>或者<code>多个元素</code>。</p>
+<blockquote>
+<p>注意：</p>
+<p>1.类名自定义，不能是中文、纯数字</p>
+<p>2.多个英文单词组成尽量使用<code>-</code>链接</p>
+<p>3.命名要有意义，尽量见名知义</p>
+<p>4.class属性可以有多类名，中间用<code>空格</code>隔开。例如</p><div class="pink  sub-nav">冬梅</div><p></p>
+</blockquote>
+<h4 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h4><p>选择HTML中具有特定id属性的唯一元素。</p>
+<h4 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h4><p>通配选择器可以选择HTML中<code>所有</code>的标签，进行样式修改。</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* {</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>特殊情况下通过通配符清除所有元素的默认边距和填充，统一不同浏览器的<code>默认样式</code>。</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* {</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>; <span class="comment">/* 去除所有元素的外边距 */</span></span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>; <span class="comment">/* 去除所有元素的内边距 */</span></span><br><span class="line">    <span class="attribute">box-sizing</span>: border-box; <span class="comment">/* 统一盒模型 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p>水平居中对齐：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.center</span>{</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">} </span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="关系选择器"><a href="#关系选择器" class="headerlink" title="关系选择器"></a>关系选择器</h3><p>关系选择器是通过<code>位置关系</code>来选择目标元素（标签），可以更精准选择某些元素。</p>
+<h4 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h4><p>选择某个元素的<code>后代</code>元素（<code>不限层级</code>，包括子元素、孙元素等）。</p>
+<h4 id="子代选择器"><a href="#子代选择器" class="headerlink" title="子代选择器"></a>子代选择器</h4><p>选择某个元素的<code>直接子元素</code>（仅限一层）</p>
+<h4 id="兄弟选择器"><a href="#兄弟选择器" class="headerlink" title="兄弟选择器"></a>兄弟选择器</h4><p>分为邻接兄弟选择器、通用兄弟选择器。</p>
+<h3 id="分组选择器"><a href="#分组选择器" class="headerlink" title="分组选择器"></a>分组选择器</h3><p>是将不同的选择器<code>组合</code>到一起，使用<code>逗号</code>分割。也称为<code>并集选择器</code>。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.多个元素具备相同样式。</p>
+</blockquote>
+<p>语法：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>,</span><br><span class="line"><span class="selector-tag">span</span> {</span><br><span class="line">    <span class="attribute">color</span>: pink;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="伪类和伪元素"><a href="#伪类和伪元素" class="headerlink" title="伪类和伪元素"></a>伪类和伪元素</h3><h4 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h4><p>选择元素的<code>特定状态</code>或<code>结构位置</code>，符号是冒号(<code>:</code>)</p>
+<h5 id="状态伪类选择器"><a href="#状态伪类选择器" class="headerlink" title="状态伪类选择器"></a>状态伪类选择器</h5><h6 id="链接伪类"><a href="#链接伪类" class="headerlink" title="链接伪类"></a>链接伪类</h6><p>链接伪类用于根据链接的<code>不同状态</code>（如未访问、悬停、点击等）为其添加样式，从而提升用户体验和界面交互性。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.设置链接不同状态的样式。</p>
+</blockquote>
+<p><code>伪类顺序规则（LVHA顺序）：a:link -&gt; a:visited -&gt; a:hover -&gt; a:active</code></p>
+<h6 id="用户行为伪类"><a href="#用户行为伪类" class="headerlink" title="用户行为伪类"></a>用户行为伪类</h6><p>用户以某种方式和文档<code>交互</code>的时候应用，这些用户行为伪类，有时叫做<code>动态伪类</code>。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.鼠标经过元素的时候，修改样式。</p>
+<p>2.表单获得焦点的时候</p>
+</blockquote>
+<h5 id="结构伪类选择器"><a href="#结构伪类选择器" class="headerlink" title="结构伪类选择器"></a>结构伪类选择器</h5><p>根据<code>元素的位置</code>选择目标元素。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.选择第1个或者最后一个或者第n个元素</p>
+</blockquote>
+<h5 id="表单伪类选择器"><a href="#表单伪类选择器" class="headerlink" title="表单伪类选择器"></a>表单伪类选择器</h5><p>针对表单元素的状态。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.表单按钮禁用的时候，调整颜色。</p>
+<p>2.复选框选中修改样式。</p>
+</blockquote>
+<h4 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h4><p>选择元素的特定部分（使用双冒号<code>::</code>）</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.让表单里面的placeholder文字变颜色。</p>
+<p>2.做很多的修饰效果。</p>
+</blockquote>
+<blockquote>
+<p>注意：</p>
+<p>.nav   类选择器</p>
+<p>:hover   伪类选择器</p>
+<p>::before   伪元素选择器</p>
+</blockquote>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><p>根据元素的<code>属性特征</code>来精准定位元素，从而实现更灵活的样式控制。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.表单样式控制</p>
+<p>2.图标字体控制</p>
+<p>3.国家化语言适配等等</p>
+</blockquote>
+<h2 id="CSS文本样式"><a href="#CSS文本样式" class="headerlink" title="CSS文本样式"></a>CSS文本样式</h2><p>CSS文本样式用于控制网页中文字的外观，包括字体、颜色、对齐、间距等，主要分为两大类：</p>
+<p>字体样式：使用哪种字体，字体大小、字体粗体、斜体等等。</p>
+<p>文本布局：文本对齐、行高、字间距、首行缩进等。</p>
+<blockquote>
+<p>注意：文字是无法直接通过CSS来更改样式的，必须要用适合的<code>标签来包裹它们</code>，本质是<code>修改标签</code>样式，里面文字跟随样式变化。</p>
+</blockquote>
+<h4 id="字体颜色color"><a href="#字体颜色color" class="headerlink" title="字体颜色color"></a>字体颜色color</h4><p>最常见的颜色指定方式，使用关键字、十六进制和rgb()值。学习可以用关键字，开发用十六进制，特殊情况用rgb。</p>
 <ul>
-<li>变量可以<code>重复声明</code>（覆盖原变量）</li>
-<li>变量未赋值时，默认值为undefined</li>
-<li>var声明的变量会提升（Hoisting），但不会初始化</li>
-<li>一条语句中声明的多个变量不可以同时赋同一个值</li>
-</ul>
-<h2 id="JS数据类型"><a href="#JS数据类型" class="headerlink" title="JS数据类型"></a>JS数据类型</h2><p>**值类型(基本类型)**：字符串（String）、数字(Number)、布尔(Boolean)、空（Null）、未定义（Undefined）、Symbol。</p>
-<p><strong>引用数据类型（对象类型）</strong>：对象(Object)、数组(Array)、函数(Function)，还有两个特殊的对象：正则（RegExp）和日期（Date）。</p>
-<h2 id="JS变量提升"><a href="#JS变量提升" class="headerlink" title="JS变量提升"></a>JS变量提升</h2><p>声明提升：函数声明和变量声明总是会被解释器悄悄地被<code>提升</code>到方法体的最顶部。</p>
-<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><p>在JavaScript中，DOM和BOM是两个核心概念，它们构成了前端开发的基石。虽然经常一起出现，但它们的职责、对象结构和应用场景完全不同。</p>
+<li><p>关键字：这些颜色通常不会在生产环境的网站中使用，主要学习使用。比如red、green、blue、pink等。</p>
 <ul>
-<li>DOM管<code>页面内容（HTML/CSS）</code>。它是W3C标准，跨浏览器通用。</li>
-<li>BOM管<code>浏览器窗口（地址栏、历史记录、屏幕尺寸等）</code>。它没有统一标准，依赖浏览器厂商实现（但主流浏览器高度一致）。</li>
+<li><p>十六进制：这个是开发最常用的。实际开发中，我们从设计稿直接复制即可。比如：红色#ff0000或者#f00。</p>
+</li>
+<li><p>rgb格式：rgb()函数接受三个参数，分别表示颜色的红、绿和蓝。也是设计稿复制的。比如红色rgb(255,0,0)。</p>
+</li>
+<li><p>另有rgba(255,0,0,0)文字透明。最后一个数值取值0~1，0完全透明，1完全不透明。</p>
+</li>
 </ul>
-<p><strong>常用API示例：</strong></p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 获取元素</span></span><br><span class="line"><span class="keyword">const</span> box = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">'box'</span>);</span><br><span class="line"><span class="keyword">const</span> items = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">'.item'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 修改内容</span></span><br><span class="line">box.<span class="property">innerHTML</span> = <span class="string">'&lt;h1&gt;Hello DOM&lt;/h1&gt;'</span>;</span><br><span class="line">box.<span class="property">textContent</span> = <span class="string">'纯文本内容'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 修改样式</span></span><br><span class="line">box.<span class="property">style</span>.<span class="property">color</span> = <span class="string">'red'</span>;</span><br><span class="line">box.<span class="property">classList</span>.<span class="title function_">add</span>(<span class="string">'active'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4. 创建并添加节点</span></span><br><span class="line"><span class="keyword">const</span> newLi = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">'li'</span>);</span><br><span class="line">newLi.<span class="property">textContent</span> = <span class="string">'新列表项'</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">'ul'</span>).<span class="title function_">appendChild</span>(newLi);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 5. 事件监听</span></span><br><span class="line">box.<span class="title function_">addEventListener</span>(<span class="string">'click'</span>, <span class="function">() =&gt;</span> {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'盒子被点击了'</span>);</span><br><span class="line">});</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="字体族font-family"><a href="#字体族font-family" class="headerlink" title="字体族font-family"></a>字体族font-family</h4></li>
+</ul>
+<p>给定一个有先后顺序的，由字体名或者字体族名组成的列表来为选定的元素设置字体。</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> {</span><br><span class="line">    <span class="attribute">font-family</span>: Arial, Helvetica, sans-serif;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>属性值用逗号隔开。浏览器会选择列表中第一个该计算机上有安装的字体。</p>
+<h4 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h4><p>font-size可以设置字体大小。</p>
+<p>单位是：像素px。CSS像素是CSS中用于定义长度、尺寸的单位（简写为px）。</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
 <blockquote>
-<p>注意：DOM操作通常比较消耗性能（会触发重排Reflow和重绘Repaint），在现代开发中（如React/Vue），我们通常通过“数据驱动”来间接操作DOM，而不是直接频繁操作。</p>
+<p>注意：不同浏览器默认字体大小不一样，谷歌默认16px，建议给body标签统一指定大小，做到浏览器统一。</p>
 </blockquote>
-<p><strong>常用代码示例：</strong></p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 窗口操作</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="title function_">alert</span>(<span class="string">'你好！'</span>);</span><br><span class="line"><span class="variable language_">window</span>.<span class="title function_">resizeTo</span>(<span class="number">800</span>, <span class="number">600</span>); <span class="comment">// 调整窗口大小</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">window</span>.<span class="property">innerWidth</span>); <span class="comment">// 获取视口宽度</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 地址栏操作 (Location)</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(location.<span class="property">href</span>); <span class="comment">// 获取完整 URL</span></span><br><span class="line">location.<span class="property">href</span> = <span class="string">'https://www.google.com'</span>; <span class="comment">// 跳转页面</span></span><br><span class="line">location.<span class="title function_">reload</span>(); <span class="comment">// 刷新页面</span></span><br><span class="line">location.<span class="property">search</span>; <span class="comment">// 获取 ?id=123 部分</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 历史记录 (History) - 单页应用(SPA)路由的基础</span></span><br><span class="line">history.<span class="title function_">back</span>(); <span class="comment">// 后退</span></span><br><span class="line">history.<span class="title function_">pushState</span>({<span class="attr">page</span>: <span class="number">2</span>}, <span class="string">''</span>, <span class="string">'/page2'</span>); <span class="comment">// 压入新历史，不刷新页面</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 4. 定时器 (属于 window)</span></span><br><span class="line"><span class="keyword">const</span> timer = <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'3秒后执行'</span>);</span><br><span class="line">}, <span class="number">3000</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 5. 省略 window (习惯写法)</span></span><br><span class="line"><span class="comment">// 以下两行等价，通常省略 window</span></span><br><span class="line"><span class="title function_">alert</span>(<span class="string">'Hi'</span>); </span><br><span class="line"><span class="variable language_">window</span>.<span class="title function_">alert</span>(<span class="string">'Hi'</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">'div'</span>);</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">document</span>.<span class="title function_">querySelector</span>(<span class="string">'div'</span>);</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="字体风格"><a href="#字体风格" class="headerlink" title="字体风格"></a>字体风格</h4><p>font-style用来打开和关闭文本italic（斜体）。</p>
+<p>属性值：</p>
+<ul>
+<li>normal：将文本设置为普通字体（将存在的斜体关闭）。</li>
+<li>italic：如果当前字体的斜体版本可用，那么文本设置为斜体版本。</li>
+</ul>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">font-style</span>: italic; <span class="comment">/* 设置斜体样式 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
+<p>最常见：让em或者i标签<code>取消默认倾斜</code></p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">em</span> {</span><br><span class="line">    <span class="attribute">font-style</span>: normal; <span class="comment">/* 让em取消斜体 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="字体粗体"><a href="#字体粗体" class="headerlink" title="字体粗体"></a>字体粗体</h4><p>font-weight设置文字的粗体大小。</p>
+<p><strong>属性值：</strong></p>
+<ul>
+<li>normal：正常粗细</li>
+<li>bold：加粗</li>
+</ul>
+<p>其他值受属性影响基本不用。</p>
+<p><strong>数字属性值（常用）：</strong></p>
+<ul>
+<li>400：正常粗细</li>
+<li>700：加粗</li>
+</ul>
+<p>取值范围100~900之间，常用就是400和700.</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.很多标题是不要加粗的，此时可以用CSS取消加粗。</p>
+<p>2.部分大批量文字可以利用CSS加粗。</p>
+</blockquote>
+<h4 id="字体装饰text-decoration"><a href="#字体装饰text-decoration" class="headerlink" title="字体装饰text-decoration"></a>字体装饰text-decoration</h4><p>  设置/取消字体上的文本装饰。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.最常见设置链接下划线，比如取消下划线等。</p>
+<p>2.特殊情况添加删除线。</p>
+</blockquote>
+<p>属性值：</p>
+<ul>
+<li>none：取消文本装饰</li>
+<li>underline：下划线</li>
+<li>overline：上划线</li>
+<li>line-through：穿过文本的线</li>
+</ul>
+<h4 id="文本对齐text-align"><a href="#文本对齐text-align" class="headerlink" title="文本对齐text-align"></a>文本对齐text-align</h4><p>控制文本在它所在的块级盒子内<code>如何水平对齐</code>。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.文本/图片在盒子<code>水平对齐</code>。</p>
+<p>2.文章文字<code>两端对齐</code>。</p>
+</blockquote>
+<p>属性值：</p>
+<ul>
+<li>left：文本左对齐</li>
+<li>right：文本右对齐</li>
+<li>center：文本水平居中对齐</li>
+<li>justify：自动改变字间距，两端对齐</li>
+</ul>
+<h4 id="首行缩进text-indent"><a href="#首行缩进text-indent" class="headerlink" title="首行缩进text-indent"></a>首行缩进text-indent</h4><p>设置<code>块级元素</code>中文本行前面空格（<code>缩进</code>）的长度。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.段落首行缩进2个字的效果。</p>
+<p>2.logo隐藏文字效果</p>
+</blockquote>
+<p>属性值：</p>
+<ul>
+<li><p>数字</p>
+<p>常见单位是em，相对单位，<code>本元素的文字大小</code>。1em等于当前元素的字体大小，如果当前元素没有大小，则按照父元素文字大小。</p>
+</li>
+</ul>
+<h4 id="文本字符间距letter-spacing"><a href="#文本字符间距letter-spacing" class="headerlink" title="文本字符间距letter-spacing"></a>文本字符间距letter-spacing</h4><p>用于设置文本字符的间距。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.调整字与字之间距离，用户体验更好。</p>
+</blockquote>
+<p>属性值：</p>
+<ul>
+<li><p>数字。</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">letter-spacing</span>: <span class="number">2px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h4 id="行高line-height"><a href="#行高line-height" class="headerlink" title="行高line-height"></a>行高line-height</h4><p>设置文本每行之间的高。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.设置多行文本之间的<code>上下间距</code>。</p>
+<p>2.让单行文本<code>垂直居中</code>。</p>
+</blockquote>
+<p>属性值：</p>
+<ul>
+<li><p>数字px</p>
+</li>
+<li><p>数字不带单位（当前<code>字体大小</code>的倍数）</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> {</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h3 id="font简写"><a href="#font简写" class="headerlink" title="font简写"></a>font简写</h3><p>font简写属性在一个声明中设置多个字体属性。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.给整个页面设置相关字体样式</p>
+</blockquote>
+<p>语法：</p>
+<p><code>font:font-style font-weight font-size/line-height font-family;</code></p>
+<ul>
+<li>其中<code>font-size</code>和<code>font-family</code>是必须写</li>
+<li>其他可以省略，默认显示。</li>
+<li>属性有严格的书写顺序。</li>
+</ul>
+<h3 id="CSS继承性"><a href="#CSS继承性" class="headerlink" title="CSS继承性"></a>CSS继承性</h3><p>子元素自动继承父元素的某些CSS样式属性。</p>
+<ul>
+<li>主要继承跟文字相关的样式属性，比如字体、颜色、文本对齐等。</li>
+<li>但是子元素定义自己样式，会<code>优先自己</code>样式。</li>
+</ul>
+<h2 id="Xmind"><a href="#Xmind" class="headerlink" title="Xmind"></a>Xmind</h2><p>快捷键：</p>
+<ul>
+<li>tab：下一级</li>
+<li>enter：同一级</li>
+</ul>
+<h2 id="CSS三大特性"><a href="#CSS三大特性" class="headerlink" title="CSS三大特性"></a>CSS三大特性</h2><p>浏览器通过优先级来判断哪些属性值与一个元素最为相关。优先级是基于不同种类<code>选择器</code>组成的<code>匹配规则</code>。</p>
+<p>原则：</p>
+<p>1.优先级相等的时候，CSS中<code>最后</code>的那个声明的样式将会被应用到元素上。（层叠遵循就近原则）</p>
+<p>2.其余判断哪个选择器<code>权重</code>高，优先执行哪个样式。</p>
+<p>3.权重是4位一组，是分开的层级，不能进位。</p>
+<blockquote>
+<p>注意：<code>继承的权重是0</code></p>
+</blockquote>
+<p>（1）继承性</p>
+<p>子元素继承父元素样式，主要是跟文字相关的样式继承。</p>
+<p>（2）层叠性</p>
+<p>后面样式会覆盖前面样式，主要解决<code>样式冲突</code>问题。但是要看<code>选择器权重</code>来确定优先级。</p>
+<p>（3）优先级</p>
+<p>优先级由<code>选择器</code>的权重决定，权重高的规则<code>覆盖</code>权重低的规则。</p>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>所有的元素都被一个个的“盒子”包围着，学会盒子模型可以实现<code>准确布局</code>、处理<code>元素排列</code>的关键。</p>
+<p>在CSS中，我们有几种类型的盒子，一般分为<code>区块盒子</code>(block boxes)和<code>行内盒子</code>(inline boxes)</p>
+<h3 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h3><p>border属性用于设置盒子边框。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.设置盒子四条或者单独边框。</p>
+</blockquote>
+<p>属性值：</p>
+<p>border：边框粗细  边框样式  边框颜色；</p>
+<ul>
+<li>边框由三部分属性值组成，中间必须<code>空格</code>隔开。</li>
+<li>三部分属性值<code>没有先后顺序</code>。</li>
+</ul>
+<p>边框样式的取值有：dotted点状边框；dashed虚线边框；solid实线边框</p>
+<blockquote>
+<p>边框不同线条具有不同风格–使用场景：</p>
+<p>1.四个边框不同。</p>
+<p>2.底部一条线做分割线。</p>
+</blockquote>
+<p>属性：</p>
+<p>根据方位名词。top  bottom  left  right</p>
+<ul>
+<li>border-top：1px  solid  pink;</li>
+<li>border-bottom：1px  solid  pink;</li>
+<li>border-left：1px  solid  pink;</li>
+<li>border-right：1px  solid  pink;</li>
+</ul>
+<h3 id="圆角边框"><a href="#圆角边框" class="headerlink" title="圆角边框"></a>圆角边框</h3><p>border-radius允许你设置元素的外边框圆角。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.盒子设置圆角更好看。</p>
+<p>2.盒子或者图片设置为圆形。</p>
+</blockquote>
+<p>属性：</p>
+<p>border-radius: 属性值;</p>
+<ul>
+<li>数字/百分比</li>
+</ul>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.button</span> {</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>胶囊按钮：设置圆角为“宽度或者高度”的一半，就可以实现。</p>
+<p>圆形：正方形设置圆角为高度“一半”或者“50%”。</p>
+</blockquote>
+<h3 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h3><p>内边距（padding）位于边框和内容区域之间。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.让盒子内容和边框保留一定距离，更美观。</p>
+</blockquote>
+<p>内边距(padding)多个值用<code>空格</code>隔开。顺时针记忆。</p>
+<h3 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h3><p>外边距（margin）是盒子周围一圈看不到的空间，它会把其他元素推离盒子。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.让元素与元素保留一定距离，更美观。</p>
+</blockquote>
+<blockquote>
+<p>注意：</p>
+<p>1.<code>行内元素</code>左右外边距生效，<code>上下外边距无效</code>。</p>
+<p>2.行内元素设置<code>宽度和高度</code>也无效。</p>
+</blockquote>
+<blockquote>
+<p>技巧：</p>
+<p><code>区块元素</code>可以利用margin实现<code>水平居中</code>。</p>
+<ul>
+<li>块级盒子必须有<code>宽度</code>。</li>
+<li>只需要设置<code>左右外边距为auto</code>就可以。</li>
+</ul>
+</blockquote>
+<p><code>区块元素</code>上下外边距会出现<code>折叠（合并）</code>情况。</p>
+<ul>
+<li>并列关系（兄弟）的区块元素。</li>
+<li>两个上下外边距将合并为一个外边距，其大小等于<code>最大</code>的单个外边距。</li>
+</ul>
+<blockquote>
+<p>注意：这个是浏览器的特性，我们只设置一个盒子外边距即可。</p>
+</blockquote>
+<p><code>区块元素</code>上下外边距会出现<code>塌陷</code>情况。</p>
+<ul>
+<li>嵌套关系（父子）的区块元素。</li>
+<li>给子盒子设置上下外边距会让父盒子塌陷移动。</li>
+</ul>
+<blockquote>
+<p><strong>解决方案：</strong></p>
+<p>1.给父盒子添加<code>边框</code>。（父盒子本身有边框则不会出现问题）</p>
+<p>2.给父盒子添加上<code>内边距</code></p>
+<p>3.给父盒子添加：<code>overflow: hidden；</code>属性</p>
+</blockquote>
+<h3 id="尺寸计算"><a href="#尺寸计算" class="headerlink" title="尺寸计算"></a>尺寸计算</h3><p>在CSS盒子模型的默认定义里，除了宽度和高度增加盒子大小之外，padding和border都会让<code>盒子变大</code>。这样我们在计算盒子大小的时候都会带来困扰。</p>
+<p><code>box-sizing</code>用于定义元素的盒模型计算方式，控制元素的width和height是否<code>包含padding和border</code>。</p>
+<p>语法：</p>
+<p>box-sizing：属性值；</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">box-sizing</span>: border-box;</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>实际开发中，虽然默认是第一个值，但是我们更提倡使用<code>border-box</code>，可以直接让所有标签修改。</p>
+</blockquote>
+<h3 id="盒子背景"><a href="#盒子背景" class="headerlink" title="盒子背景"></a>盒子背景</h3><p><code>background</code>用于设置元素背景相关属性，包括背景颜色、背景图片、背景位置、背景重复方式等。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.给盒子添加背景图片，更加精美。</p>
+<p>2.给列表添加相同的小图标，装饰效果。</p>
+<p>3.给页面添加大的背景图片，展示更震撼。</p>
+<p>4.纯CSS实现背景渐变效果。</p>
+</blockquote>
+<blockquote>
+<p>背景复合写法：</p>
+<p>background: 颜色  图片  重复  固定  位置/尺寸；</p>
+<p><code>顺序无关</code></p>
+</blockquote>
+<h3 id="背景渐变"><a href="#背景渐变" class="headerlink" title="背景渐变"></a>背景渐变</h3><p>在CSS中，可以通过<code>linear-gradient</code>（线性渐变）和<code>radial-gradient</code>（径向渐变）为元素添加渐变背景。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.文字底色渐变甚至动画，更吸引用户。</p>
+<p>2.盒子添加更美观。</p>
+</blockquote>
+<blockquote>
+<p>使用技巧：</p>
+<p>1.实际开发，UI设计稿可以直接复制即可。</p>
+<p>2.可以利用trae图片自动生成。</p>
+</blockquote>
+<h3 id="盒子阴影"><a href="#盒子阴影" class="headerlink" title="盒子阴影"></a>盒子阴影</h3><p>CSS  box-shadow属性用于在元素的框架上添加阴影效果。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.盒子添加阴影，效果更立体。</p>
+<p>2.鼠标经过元素显示阴影，更加突出元素。</p>
+</blockquote>
+<p>语法：</p>
+<p><code>box-shadow：x轴偏移量  y轴偏移量  模糊半径  扩散半径  颜色；</code></p>
+<ul>
+<li>多个属性用<code>空格</code>隔开</li>
+<li><code>x轴偏移量和y轴偏移量</code>是必须要写，其余可以省略采取默认值。</li>
+<li>默认是外阴影，如果改为内阴影要写inset</li>
+</ul>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.nav</span> <span class="selector-tag">li</span> {</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">15px</span> <span class="number">30px</span> <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h3><p>过渡效果（transition）用于在元素的属性值发生变化时，平滑地过渡（而不是瞬间切换）。</p>
+<blockquote>
+<p>场景：</p>
+<p>1.鼠标经过图片放大。</p>
+<p>2.表单获得焦点，输入框变宽。</p>
+</blockquote>
+<p>语法：</p>
+<p><code>transition：过渡属性  过渡时间；</code></p>
+<ul>
+<li>属性值中间空格隔开。</li>
+<li>过渡属性如果都要变化可以写<code>all</code></li>
+<li>过渡时间单位是<code>秒s</code>，比如0.2s等</li>
+</ul>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:hover</span> {</span><br><span class="line">    <span class="attribute">transition</span>: all <span class="number">0.3s</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="样式初始化"><a href="#样式初始化" class="headerlink" title="样式初始化"></a>样式初始化</h3><p>浏览器对HTML元素有默认样式（如margin、padding、font-size），不同浏览器的默认样式可能不一致，导致跨浏览器兼容性问题。</p>
+<blockquote>
+<p>初始化的核心目的：</p>
+<ul>
+<li>统一浏览器默认样式，消除差异。</li>
+<li>减少后续开发中的冗余代码。</li>
+<li>提高代码的可维护性。</li>
+</ul>
+</blockquote>
+<h2 id="字体图标"><a href="#字体图标" class="headerlink" title="字体图标"></a>字体图标</h2><p>字体图标（Icon Fonts）是一种将图标以<code>字体形式</code>嵌入网页的技术，允许开发者像使用<code>文字</code>一样通过CSS控制<code>图标的样式</code>（如颜色、大小、阴影等）。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.导航菜单图标。</p>
+<p>2.按钮操作图标。</p>
+<p>3.结合动画效果。</p>
+</blockquote>
+<blockquote>
+<p>优势：</p>
+<p>1.矢量缩放：无损放大缩小</p>
+<p>2.样式灵活：通过CSS直接修改颜色、大小、阴影等属性。</p>
+<p>3.减少HTTP请求：一个字体文件可包含多个图标，比多张图片更高效。</p>
+<p>4.兼容性好：支持所有现代浏览器，甚至部分旧版浏览器。</p>
+</blockquote>
+<p>字体图标要么设计师提供，要么去字体库下载。</p>
+<p>使用字体图标的步骤：</p>
+<p>（1）下载字体图标文件</p>
+<p>去官网或者设计师准备字体图标文件，保存到项目目录下。</p>
+<p>（2）引入html文件中</p>
+<p>根据提供的压缩包，引入CSS文件（link方式）</p>
+<p>（3）使用字体图标</p>
+<p>一般情况下，我们通过标签调用类名选择对应字体图标。根据实际需求，调整字体样式，比如颜色、大小、位置等。</p>
+<h2 id="精灵图"><a href="#精灵图" class="headerlink" title="精灵图"></a>精灵图</h2><p>CSS精灵图（CSS Sprites）是将多个小图标或图像合并到<code>一张大图</code>中，通过调整<code>background-position</code>属性来显示特定部分的图像技术。</p>
+<blockquote>
+<p>使用场景：</p>
+<p>1.导航菜单图标。</p>
+<p>2.按钮操作图标。</p>
+<p>3.<code>复杂彩色</code>小图标更适合精灵图。</p>
+</blockquote>
+<blockquote>
+<p>优势：</p>
+<p>1.减少HTTP请求：多个小图标合并为一张图片，只需一次请求。</p>
+<p>2.提升性能：减少网络开销，尤其适合移动端或低带宽场景。</p>
+<p>3.统一管理：方便维护图标集，避免文件分散。</p>
+</blockquote>
+<blockquote>
+<p>注意：通过合理使用CSS精灵图，可以有效优化网页性能。对于复杂场景（如高清屏适配），建议结合SVG或字体图标使用。</p>
+</blockquote>
+<blockquote>
+<p>原理：</p>
+<p>1.给盒子添加<code>背景图片</code>。</p>
+<p>2.通过<code>背景定位（background-position）移动位置</code>对齐。</p>
+<p>3.注意网页的坐标不同，大多数都是负值。</p>
+</blockquote>
 
                 
             </div>
@@ -592,7 +1003,7 @@ JS输出
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://gorgeous-swan-f4493a.netlify.app/2025/06/21/javascript/">https://gorgeous-swan-f4493a.netlify.app/2025/06/21/javascript/</a>
+                    <a href="https://gorgeous-swan-f4493a.netlify.app/2025/06/24/css/">https://gorgeous-swan-f4493a.netlify.app/2025/06/24/css/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -714,9 +1125,10 @@ JS输出
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2025/06/24/css/">
                     <div class="card-image">
@@ -734,9 +1146,9 @@ JS输出
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-06-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -753,6 +1165,7 @@ JS输出
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -772,7 +1185,7 @@ JS输出
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2025/06/21/javascript/">
@@ -810,7 +1223,6 @@ JS输出
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
