@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>移动网页开发</title>
+      <link href="/2026/02/02/yi-dong-wang-ye-kai-fa/"/>
+      <url>/2026/02/02/yi-dong-wang-ye-kai-fa/</url>
+      
+        <content type="html"><![CDATA[<h1 id="移动网页开发"><a href="#移动网页开发" class="headerlink" title="移动网页开发"></a>移动网页开发</h1><h2 id="移动端知识"><a href="#移动端知识" class="headerlink" title="移动端知识"></a>移动端知识</h2><h3 id="视口标签"><a href="#视口标签" class="headerlink" title="视口标签"></a>视口标签</h3><p>视口标签：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name="viewport" <span class="attribute">content</span>="<span class="attribute">width</span>=device-<span class="attribute">width</span>,initial-<span class="attribute">scale</span>=<span class="number">1.0</span>"&gt;</span><br></pre></td></tr></tbody></table></figure><h3 id="物理像素和CSS像素"><a href="#物理像素和CSS像素" class="headerlink" title="物理像素和CSS像素"></a>物理像素和CSS像素</h3><p><code>物理像素</code>：（也称设备像素）是设备屏幕的实际物理像素数量，即硬件层面的像素点总数，出厂默认。</p><p>例如：一台设备的屏幕分辨率为2532x1170，表示横向有2352个物理像素，纵向有1170个物理像素。</p><p>硬件相关：由屏幕硬件决定，不同设备的物理分辨率可能不同。</p><p>将更多的物理像素点压缩至一块屏幕里，从而达到更多的分辨率，<code>提高了屏幕显示的细腻程度。</code></p><p><code>CSS像素</code>：（也称设备独立像素或者逻辑像素）是CSS中使用的虚拟像素单位，用于<code>布局和样式计算</code>。它是一个抽象概念，不直接对应物理像素，而是通过<code>设备像素比</code>（DPR）与物理像素关联。</p><p>比如：PC端，1个CSS像素就是1个物理像素，但是手机端要看DPR。</p><h2 id="vw-vmin适配方案"><a href="#vw-vmin适配方案" class="headerlink" title="vw/vmin适配方案"></a>vw/vmin适配方案</h2><p>实现移动端适配方案：</p><blockquote><p>注意：不管哪种方案，页面布局还是使用grid、flex、百分比等，元素大小需要进行适配。</p></blockquote><h3 id="vw-vh单位适配"><a href="#vw-vh单位适配" class="headerlink" title="vw/vh单位适配"></a>vw/vh单位适配</h3><p>vw（Viewport Width）是一种基于<code>视窗宽度</code>的相对单位，非常适合于移动端适配。</p><blockquote><p>vw单位定义：</p><ul><li>1vw = 视窗宽度的1%</li><li>如果视窗宽度是375px，则1vw = 375px</li><li>同理100vw = 视窗完整宽度</li><li>vh：视窗高度的1%</li><li>注意vw和%不一样，%相当于<code>父容器</code></li></ul></blockquote><p>注意：网页是主要对<code>屏幕宽度</code>适配，所以通常用vw即可，vh很少用。</p><blockquote><p>设计稿转换公式：</p><p>vw值 = （元素在设计稿中的px值 / 设计稿宽度） x 100vw</p><p>例如：（106 / 375） * 100vw = 28.26vw</p></blockquote><h2 id="新知识"><a href="#新知识" class="headerlink" title="新知识"></a>新知识</h2><h3 id="圆角"><a href="#圆角" class="headerlink" title="圆角"></a>圆角</h3><p>CSS提供了四个独立的圆角属性，分别控制四个角：</p><ul><li>border-top-left-radius：左上角</li><li>border-top-right-radius：右上角</li><li>border-bottom-right-radius：右下角</li><li>border-bottom-left-radius：左下角</li></ul><blockquote><p>注意：如果后面跟两个值分别表示该角的<code>水平半径和垂直半径</code></p></blockquote><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">border-bottom-left-radius</span>：<span class="number">150px</span> <span class="number">20px</span>；</span><br></pre></td></tr></tbody></table></figure><p>上述代码最终画出来的是一个椭圆。</p><h3 id="去除高亮"><a href="#去除高亮" class="headerlink" title="去除高亮"></a>去除高亮</h3><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> {</span><br><span class="line">    -webkit-tap-highlight-<span class="attribute">color</span>:<span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="comment">/* 移除移动端点击高亮 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h3 id="vmin-vmax单位"><a href="#vmin-vmax单位" class="headerlink" title="vmin/vmax单位"></a>vmin/vmax单位</h3><p>当设备旋转（如手机从竖屏转横屏）时，视口的宽高会变化，但<code>vmin</code>始终取当前宽高的<code>较小值</code>,vmax取较大值。</p><h2 id="rem适配方案"><a href="#rem适配方案" class="headerlink" title="rem适配方案"></a>rem适配方案</h2><p>rem单位适配：通过动态修改<code>根元素（html）</code>的<code>font-size</code>，使得页面元素基于rem的布局能够自适应不同屏幕尺寸。比如京东、淘宝、小米移动端使用rem适配。</p><blockquote><p>设计稿转换公式：</p><p>rem值 = 设计稿元素尺寸 / html的font-size（基准值）</p><p>(106 / 37.5) = 2.826 rem</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习咯 </category>
+          
+          <category> 前端学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习咯 </tag>
+            
+            <tag> 前端学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前沿技术拓展</title>
       <link href="/2026/01/21/qian-yan-ji-zhu-tuo-zhan/"/>
       <url>/2026/01/21/qian-yan-ji-zhu-tuo-zhan/</url>
