@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>
-    <name>Nicole</name>
+    <name>Nicole and Simon</name>
   </author>
   <generator uri="https://hexo.io/">Hexo</generator>
   <id>https://gorgeous-swan-f4493a.netlify.app/</id>
   <link href="https://gorgeous-swan-f4493a.netlify.app/" rel="alternate"/>
   <link href="https://gorgeous-swan-f4493a.netlify.app/atom.xml" rel="self"/>
-  <rights>All rights reserved 2026, Nicole</rights>
-  <subtitle>记录学习与生活</subtitle>
-  <title>Nicole's Blog</title>
-  <updated>2026-03-24T04:52:49.699Z</updated>
+  <rights>All rights reserved 2026, Nicole and Simon</rights>
+  <subtitle>记录学习与生活，分享编程心得和生活点滴。</subtitle>
+  <title>Nicole and Simon's Blog</title>
+  <updated>2026-03-03T16:11:09.351Z</updated>
   <entry>
     <author>
-      <name>Nicole</name>
+      <name>Nicole and Simon</name>
+    </author>
+    <id>https://gorgeous-swan-f4493a.netlify.app/2026/04/29/kali-ming-ling/</id>
+    <link href="https://gorgeous-swan-f4493a.netlify.app/2026/04/29/kali-ming-ling/"/>
+    <published>2026-04-29T02:31:22.322Z</published>
+    <summary>
+      <![CDATA[<p>KALI命令：</p>
+<p>ctrl + alt + T：打开命令行</p>
+<p>sudo passwd root：修改root密码</p>
+<p>sudo su：切换管理员</p>
+<p>配置下载源：</p>
+<p>vim]]>
+    </summary>
+    <updated>2026-03-03T16:11:09.351Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Nicole and Simon</name>
     </author>
     <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
     <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
@@ -30,7 +47,7 @@
   </entry>
   <entry>
     <author>
-      <name>Nicole</name>
+      <name>Nicole and Simon</name>
     </author>
     <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
     <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
@@ -47,7 +64,7 @@
   </entry>
   <entry>
     <author>
-      <name>Nicole</name>
+      <name>Nicole and Simon</name>
     </author>
     <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
     <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
@@ -64,7 +81,7 @@
   </entry>
   <entry>
     <author>
-      <name>Nicole</name>
+      <name>Nicole and Simon</name>
     </author>
     <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
     <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
@@ -81,7 +98,7 @@
   </entry>
   <entry>
     <author>
-      <name>Nicole</name>
+      <name>Nicole and Simon</name>
     </author>
     <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
     <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
@@ -98,7 +115,7 @@
   </entry>
   <entry>
     <author>
-      <name>Nicole</name>
+      <name>Nicole and Simon</name>
     </author>
     <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
     <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
@@ -115,7 +132,7 @@
   </entry>
   <entry>
     <author>
-      <name>Nicole</name>
+      <name>Nicole and Simon</name>
     </author>
     <category term="学习咯" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/"/>
     <category term="前端学习" scheme="https://gorgeous-swan-f4493a.netlify.app/categories/%E5%AD%A6%E4%B9%A0%E5%92%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
